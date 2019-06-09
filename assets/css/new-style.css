@@ -1,0 +1,2005 @@
+/* ==================================================================================================================== Table Content: ==================================================================================================================== 1. fonts 2. Base CSS 3. Commom CSS 4. Background Image CSS 5. Home Page CSS 5.1 - Header Top CSS 5.2 - Header Area CSS 5.3 - Header Bottom CSS 5.4 - News Area CSS 5.5 - Organizer Area CSS 5.6 - Organizer Bottom Area CSS 5.7 - Footer Area CSS 6. Ambassadors Page CSS 7. Page-Development Page CSS 8. Transport Page CSS 9. Fans Fastival Page CSS 10. Stadium Page CSS 11. About Kaliningrad Page CSS 12. Single News Page CSS 13. News Homepage Page CSS 14. Contact Page CSS 15. FanID Page CSS 16. Documention Page CSS 17. History Page CSS 18. Ticket Page CSS */
+/* ================================== 1. Fonts ================================== */
+/* Dusha Plus Font */
+ @font-face {
+     font-family: 'DushaPlus-Regular';
+     src: url('../fonts/DushaPlus-Regular.eot');
+     src: url('../fonts/SFUIDisplay-Medium.woff2') format('woff2'), url('../fonts/DushaPlus-Regular.woff') format('woff'), url('../fonts/DushaPlus-Regular.ttf') format('truetype'), url('../fonts/DushaPlus-Regular.svg#SFUIDisplay-Medium') format('svg'), url('../fonts/DushaPlus-Regular.eot?#iefix') format('embedded-opentype');
+     font-weight: normal;
+     font-style: normal;
+}
+/* Whitney Book Font */
+ @font-face {
+     font-family: 'Whitney-Book';
+     src: url('../fonts/Whitney-Book.eot');
+     src: url('../fonts/Whitney-Book.woff2') format('woff2'), url('../fonts/Whitney-Book.woff') format('woff'), url('../fonts/Whitney-Book.ttf') format('truetype'), url('../fonts/Whitney-Book.svg#SFUIDisplay-Medium') format('svg'), url('../fonts/Whitney-Book.eot?#iefix') format('embedded-opentype');
+     font-weight: normal;
+     font-style: normal;
+}
+/* Whitney Semibold Font */
+ @font-face {
+     font-family: 'Whitney-Semibold';
+     src: url('../fonts/Whitney-Semibold.eot');
+     src: url('../fonts/Whitney-Semibold.woff2') format('woff2'), url('../fonts/Whitney-Semibold.woff') format('woff'), url('../fonts/Whitney-Semibold.ttf') format('truetype'), url('../fonts/Whitney-Semibold.svg#SFUIDisplay-Medium') format('svg'), url('../fonts/Whitney-Semibold.eot?#iefix') format('embedded-opentype');
+     font-weight: normal;
+     font-style: normal;
+}
+/* Whitney Medium Font */
+ @font-face {
+     font-family: 'Whitney-Medium';
+     src: url('../fonts/Whitney-Medium.eot');
+     src: url('../fonts/Whitney-Medium.woff2') format('woff2'), url('../fonts/Whitney-Medium.woff') format('woff'), url('../fonts/Whitney-Medium.ttf') format('truetype'), url('../fonts/Whitney-Medium.svg#SFUIDisplay-Medium') format('svg'), url('../fonts/Whitney-Medium.eot?#iefix') format('embedded-opentype');
+     font-weight: normal;
+     font-style: normal;
+}
+/* ================================== 2. Base CSS ================================== */
+ .alignleft {
+     float: left;
+     margin-right: 15px;
+}
+ .alignright {
+     float: right;
+     margin-left: 15px;
+}
+ .aligncenter {
+     display: block;
+     margin: 0 auto 15px;
+}
+ a:focus {
+     outline: 0 solid 
+}
+ img {
+     max-width: 100%;
+     height: auto;
+}
+ h1, h2, h3, h4, h5, h6 {
+     margin: 0 0 15px;
+     font-family: 'DushaPlus-Regular', sans-serif;
+}
+ h1 {
+     font-size: 36px;
+}
+ h3 {
+     font-size: 24px;
+}
+ body {
+     font-family: 'Whitney-book', sans-serif;
+     font-size: 16px;
+     line-height: 24px;
+}
+ a:hover {
+     text-decoration: none 
+}
+/* ================================== 3. Common CSS ================================== */
+ .line-height-20px{
+     line-height: 20px;
+}
+ .news-cotent, .footer-left-text, .footer-wid-link li a {
+     font-family: 'Whitney-Medium';
+}
+ .fans-left-heading .text-right a {
+     font-family: 'Whitney-Book', sans-serif;
+}
+ .quick-link-home {
+     color: #000;
+}
+ .responsive-menu .slicknav_menu {
+     display: none;
+}
+ .headaer-right.other-pages-header-right {
+     margin-top: 35px;
+}
+ .font-family-whitneybook {
+     font-family: 'Whitney-Book', sans-serif;
+}
+ a.decotaion-true {
+     text-decoration: underline;
+}
+ p.text-align-center {
+     text-align: center;
+}
+ .body-content-center h1 {
+     position: relative;
+     font-size: 36px;
+}
+ .body-content-center h1::before {
+     background-image: url(../img/heading-bg-after.png);
+     content: "";
+     width: 30%;
+     height: 19px;
+     position: absolute;
+     right: 0;
+     top: 10px;
+     background-repeat: no-repeat;
+     background-position: left center;
+     bottom: 0;
+     margin: auto;
+}
+ .body-content-center h1::after {
+     background-image: url(../img/heading-bg-after.png);
+     content: "";
+     width: 30%;
+     height: 15px;
+     position: absolute;
+     left: 0;
+     top: 3px;
+     background-repeat: no-repeat;
+     background-position: left center;
+     bottom: 0;
+     margin: auto;
+}
+ .body-content-center.long-dots-line h1::after {
+     width: 38%;
+}
+ .body-content-center.long-dots-line h1::before {
+     width: 38%;
+}
+ .heading-dots-inc {
+     text-align: center;
+     margin: 0 0 40px;
+     position: relative;
+}
+ .single-title-small-dots h1 {
+     position: relative;
+}
+ .single-title-small-dots h1::before {
+     background-image: url(../img/small-heading-dots.png);
+     content: "";
+     width: 35%;
+     height: 19px;
+     position: absolute;
+     right: 0;
+     top: 10px;
+     background-repeat: no-repeat;
+     background-position: left center;
+     bottom: 0;
+     margin: auto;
+}
+ .single-title-small-dots h1::after {
+     background-image: url(../img/small-heading-dots.png);
+     content: "";
+     width: 35%;
+     height: 15px;
+     position: absolute;
+     left: 0;
+     top: 3px;
+     background-repeat: no-repeat;
+     background-position: left center;
+     bottom: 0;
+     margin: auto;
+}
+ .single-title-small-dots {
+     text-align: center;
+     margin: 0 0 30px;
+}
+ .body-content-center b,.body-content-center strong, .contact-details b, .history-bottom-content b, .about-kaliningrad-cotent b, .modal-window-heading p, .tickets-body-content b {
+     font-family: 'Whitney-Medium', sans-serif;
+}
+/* ================================== 4. Background Image CSS ================================== */
+ .banner-time {
+     background-image: url(../img/banner-icon.png);
+}
+ .header-area {
+     background-image: url(../img/header-banner-bg.jpg);
+     background-size: cover;
+     background-position: center;
+     background-color: #ddd;
+}
+/* Fans Gallery Images Background */
+ .fans-img-bg {
+     background-image: url(../img/Transport.jpg);
+     background-size: cover;
+     background-position: center;
+     background-color: #ddd;
+}
+ .fans-img-bg-2 {
+     background-image: url(../img/2905907_full-lnd.jpg);
+     background-size: cover;
+     background-position: center;
+     background-color: #ddd;
+}
+ .fans-img-bg-3 {
+     background-image: url(../img/fanid.jpg);
+     background-size: cover;
+     background-position: center;
+     background-color: #ddd;
+}
+ .fans-img-bg-4 {
+     background-image: url(../img/FIFA_Kaliningrad3.01.jpg);
+     background-size: cover;
+     background-position: center;
+     background-color: #ddd;
+}
+ .fans-right-list {
+     background-image: url(../img/header-bottom-bg.png);
+     background-position: center;
+     background-size: cover;
+}
+/* Organizer Area Images Background */
+ .organizer-area {
+     background-image: url(../img/organizer-body-bg.png);
+     background-size: cover;
+     background-position: center;
+     background-color: #ddd;
+}
+ .organizer-bg-img {
+     background-image: url(../img/organizer-bg-1.jpg);
+     background-size: cover;
+     background-position: center;
+     background-color: #ddd;
+}
+ .organizer-bg-img-2 {
+     background-image: url(../img/organizer-bg-2.jpg);
+     background-size: cover;
+     background-position: center;
+     background-color: #ddd;
+}
+ .organizer-bg-img-3 {
+     background-image: url(../img/organizer-bg-3.jpg);
+     background-size: cover;
+     background-position: center;
+     background-color: #ddd;
+}
+ .organizer-bg-img-4 {
+     background-image: url(../img/organizer-bg-4.jpg);
+     background-size: cover;
+     background-position: center;
+     background-color: #ddd;
+}
+/* Organizer Bottom Area Images Background */
+ .title-bg {
+     background-image: url(../img/organizer-bottom-bg.png);
+}
+ .title-bg2 {
+     background-image: url(../img/organizer-bottom-bg-2.png);
+}
+ .title-bg3 {
+     background-image: url(../img/organizer-bottom-bg3.png);
+}
+/* Footer Area Images Background */
+ .footer-area {
+     background-image: url(../img/footer-bg.png);
+     background-size: cover;
+     background-position: bottom center;
+     background-color: #ddd;
+}
+/* ================================== 5. Home Page CSS ================================== */
+/* ================================== 5.1 - Header Top CSS ================================== */
+ .header-top {
+     padding-top: 25px;
+}
+ .nav-menu {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+}
+ .nav-menu li {
+     display: inline;
+}
+ .headaer-right {
+     text-align: right;
+}
+ .nav-menu li a {
+     padding: 5px 35px;
+     -webkit-transition: .2s;
+     -o-transition: .2s;
+     transition: .2s;
+     font-family: 'Whitney-Medium', sans-serif;
+}
+ .nav-menu li a:hover {
+     text-decoration: underline;
+     color: #00498b;
+}
+ .telephone i.fa {
+     background: #00498b;
+     color: #fff;
+     width: 25px;
+     height: 25px;
+     text-align: center;
+     line-height: 25px;
+     border-radius: 50%;
+     margin-right: 10px;
+}
+ .telephone {
+     font-weight: 700;
+     margin-bottom: 15px;
+     display: block;
+     margin-right: 15px;
+}
+ .telephone span {
+     font-weight: 400;
+     font-size: 14px;
+}
+ .headaer-right .dropdown .btn-default i.fa {
+     margin-right: 10px;
+}
+ .headaer-right .dropdown .btn-default {
+     border: none;
+     color: #025da3;
+}
+ .dropdown-menu {
+     position: absolute;
+     top: 100%;
+     right: 0 !important;
+     z-index: 1000;
+     display: none;
+     float: right !important;
+     min-width: 92px;
+     padding: 5px 0;
+     margin: 8px 0 0;
+     font-size: 14px;
+     text-align: right !important;
+     list-style: none;
+     background-color: #fff;
+     background-clip: padding-box;
+     border: 1px solid rgba(0, 0, 0, .15);
+     border-radius: 4px;
+     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+     box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+ .dropdown-menu img {
+     width: 30px;
+     margin-right: 15px;
+}
+ .dropdown-menu > li > a {
+     display: block;
+     padding: 3px 14px;
+     clear: both;
+     font-weight: 400;
+     line-height: 1.42857143;
+     color: #025da3;
+     white-space: nowrap;
+}
+ .dropdown-menu > li > a:hover {
+     color: #025da3;
+     text-decoration: underline;
+}
+ .btn-default:hover {
+     color: #333;
+     background-color: transparent;
+     border-color: #adadad;
+}
+ .nav-menu li.dropdown .btn, .btn-large {
+     background: transparent;
+     -webkit-box-shadow: 0 0 0 0;
+     box-shadow: 0 0 0 0;
+}
+/* ================================== 5.2 - Header Area CSS ================================== */
+ .header-area .row {
+     position: relative;
+     height: 290px;
+}
+ .header-banner-img {
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     max-width: 100%;
+     height: auto;
+}
+ .header-area {
+     height: 290px;
+     margin-top: -10px;
+}
+ .header-banner-content {
+     text-align: right;
+     color: #fff;
+     font-size: 26px;
+     margin-top: 34px;
+}
+ .header-banner-content h2 {
+     font-size: 26px;
+}
+ .banner-time {
+     background-position: center;
+     height: 127px;
+     display: inline-block;
+     background-size: cover;
+     background-repeat: no-repeat;
+     width: 125px;
+     position: relative;
+     font-family: 'Whitney-Book', sans-serif;
+}
+ .banner-time h1 {
+     color: #fff;
+     margin: 3px 0;
+     margin-top: 24px;
+     font-family: 'DushaPlus-Regular', sans-serif;
+     font-size: 43px;
+     margin-bottom: -5px;
+}
+ .banner-time h1 span {
+     font-size: 18px;
+     display: block;
+}
+ .banner-time {
+     text-align: center;
+     font-size: 18px;
+}
+/* ================================== 5.3 - Header Bottom CSS ================================== */
+ .fans-left-heading .text-right a {
+     margin: x;
+     padding: 17px 0;
+     display: block;
+     text-decoration: underline;
+}
+ .fans-area {
+     padding: 40px 0;
+}
+ .fans-left-heading {
+     margin-bottom: 20px;
+}
+ .fans-img {
+     height: 205px;
+     margin-bottom: 30px;
+     position: relative;
+     z-index: 1;
+     display: block;
+}
+ .fans-img:after {
+     position: absolute;
+     left: 0;
+     top: 0;
+     background: #000;
+     width: 100%;
+     height: 100%;
+     content: "";
+     z-index: -1;
+     opacity: .4;
+}
+ .hover-content {
+     color: #fff;
+     text-align: center;
+     width: 100%;
+     height: 100%;
+     display: table;
+}
+ .hover-content-table-cell {
+     display: table-cell;
+     vertical-align: middle;
+}
+ .hover-content h3 {
+     position: relative;
+     padding-bottom: 15px;
+     font-family: 'Whitney-Semibold', sans-serif;
+}
+ .hover-content h3::after {
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     width: 75px;
+     content: "";
+     right: 0;
+     margin: auto;
+     background-image: url(../img/heading-bottom.png);
+     background-position: center;
+     height: 8px;
+     background-size: cover;
+}
+ .fans-right-content {
+     text-align: center;
+}
+ .fans-right-content h1 {
+     margin: 0 0 38px;
+}
+ .fans-right-list {
+     height: 96px;
+     display: inline-block;
+     width: 401px;
+     margin-bottom: 15px;
+     background-repeat: no-repeat;
+     text-align: right;
+}
+ .fans-right-list h4 img {
+     width: 34px;
+     height: auto;
+     margin: 2px;
+}
+ .fans-right-list h4 {
+     color: #fff;
+     font-weight: 400;
+     padding: 26px 38px;
+     font-family: 'Whitney-Medium', sans-serif;
+     font-size: 22px;
+}
+ .fans-right-list h4 span {
+     display: block;
+     font-weight: 700;
+     font-family: 'Whitney-Semibold', sans-serif;
+}
+/* ================================== 5.4 - News Area CSS ================================== */
+ .news-area {
+     padding-bottom: 45px;
+}
+ .news-cotent p {
+     margin-top: 0;
+     max-height: 120px;
+     overflow: hidden;
+}
+ .news-cotent {
+     color: #000;
+     -webkit-transition: .2s;
+     -o-transition: .2s;
+     transition: .2s;
+     font-family: 'Whitney-Book', sans-serif;
+}
+ .news-cotent:hover {
+     color: #0064a8;
+     text-decoration: underline;
+}
+ .news-block-img img, .news-block-img {
+     position: relative;
+     width: 100px;
+     height: 108px;
+     overflow: hidden;
+     text-align: center;
+     margin: auto;
+}
+ .news-img-border img {
+     position: absolute;
+     left: 0;
+     top: 0;
+     height: 138px;
+     width: 100%;
+     z-index: 2;
+}
+ .news-img-border {
+     height: 108px;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+ .home-news-bg-2{
+     background-image: url(../img/main-news-img.jpg);
+}
+ .home-news-bg-3{
+     background-image: url(../img/news-img.png);
+}
+/* ================================== 5.5 - Organizer Area CSS ================================== */
+ .organizer-area {
+     padding: 70px 0;
+}
+ .organizer-title {
+     text-align: center;
+     margin-bottom: 25px;
+}
+ .organizer-single-block {
+     height: 205px;
+     position: relative;
+     display: block;
+}
+ .organizer-overlay-content {
+     color: #fff;
+     text-align: center;
+     display: table;
+     height: 100%;
+     width: 100%;
+     position: relative;
+}
+ .oranizer-title-table-cell {
+     display: table-cell;
+     vertical-align: middle;
+}
+ .organizer-overlay-content h3 {
+     position: relative;
+     padding-bottom: 15px;
+     font-family: 'Whitney-Semibold', sans-serif;
+}
+ .organizer-overlay-content h3::after {
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     width: 75px;
+     content: "";
+     right: 0;
+     margin: auto;
+     background-image: url(../img/heading-bottom.png);
+     background-position: center;
+     height: 8px;
+     background-size: cover;
+}
+/* ================================== 5.6 - Organizer Bottom Area CSS ================================== */
+ .title-bg {
+     height: 104px;
+     background-repeat: no-repeat;
+     margin-bottom: 15px;
+     background-size: contain;
+     background-position: center;
+}
+ .oranizer-bottom-area {
+     padding: 70px 0;
+}
+ .single-organizer-bottom-block p {
+     padding: 0 17px;
+}
+ .single-organizer-bottom-block {
+     text-align: center;
+     font-weight: 700;
+     font-family: 'Whitney-Semibold', sans-serif;
+}
+/* ================================== 5.7 - Footer Area CSS ================================== */
+ .footer-area .row {
+     position: relative;
+}
+ .single-footer-wid, .single-footer-wid a {
+     color: #828282;
+}
+ .single-footer-wid {
+     margin-top: 40px;
+}
+ .footer-wid-link {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+}
+ .footer-wid-link li a {
+     font-weight: ;
+     padding: 5px 0;
+     display: block;
+}
+ .footer-top-area {
+     padding-bottom: 40px;
+     position: relative;
+     padding-top: 40px;
+}
+ .footer-top-dots {
+     position: relative;
+}
+ .footer-top-dots::after {
+     position: absolute;
+     left: 0;
+     top: 0;
+     background-image: url(../img/footer-top-dots.png);
+     content: "";
+     width: 100%;
+     height: 5px;
+     background-repeat: no-repeat;
+     background-position: center;
+}
+ .single-footer-wid h4 {
+     font-family: 'Whitney-Semibold', sans-serif;
+}
+ .footer-area {
+     color: #fff;
+}
+ .footer-social-link {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+}
+ .footer-social-link li {
+     display: inline-block;
+}
+ .footer-social-link li a {
+     width: 40px;
+     height: 40px;
+     display: block;
+     color: #fff;
+     text-align: center;
+     line-height: 40px;
+     font-size: 30px;
+     margin-right: 10px;
+     border-radius: 5px;
+}
+ .footer-social-link li a.facebook-icon, .footer-social-link li a.vk-icon, .footer-social-link li a.instragam-icon {
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+ .footer-social-link li a.instragam-icon {
+     background-image: url(../img/instragam-icon.png);
+}
+ .footer-social-link li a.facebook-icon {
+     background-image: url(../img/facebook-icon.png);
+}
+ .footer-social-link li a.vk-icon {
+     background-image: url(../img/vk-icon.png);
+}
+ .footer-area {
+     position: relative;
+}
+ .footer-cartoon {
+     position: absolute;
+     right: 0;
+     top: -193px;
+}
+ .footer-left-text {
+     padding: 57px 0;
+}
+ .footer-left-text a {
+     color: #fff;
+}
+/* New Home page CSS Jun 18*/
+.fans-area.new-home-page-fans.new-homepage{
+    padding-bottom: 0;
+}
+ .fans-area.new-home-page-fans.fastival-main-block {
+     padding-top: 0;
+     position: relative;
+     padding-bottom: 315px;
+     margin-bottom: -7px;
+}
+.new-fifa-home-banner img {
+    width: 100%;
+}
+ .new-fifa-home-banner {
+     margin-bottom: 35px;
+}
+/* New Fastival Page CSS */
+ .single-fs-banner-btm-block{
+     background-image: url(../img/fastival-text-bg-frame.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+}
+ .single-fs-banner-btm-block {
+     color: #00599d;
+     -ms-flex-preferred-size: 330px;
+     flex-basis: 330px;
+     height: 91px;
+     display: table;
+     width: 330px;
+}
+ .single-fs-banner-btm-block h1 {
+     font-size: 40px;
+     text-align: center;
+     vertical-align: middle;
+     display: table-cell;
+     line-height: 35px;
+}
+ .festival-banner-bottom-botton {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: justify;
+     -ms-flex-pack: justify;
+     justify-content: space-between;
+     margin-bottom: 64px;
+}
+ .fst-cntnt-right {
+     text-align: justify;
+     font-family: 'Whitney-Medium';
+     line-height: 19.94px;
+}
+ .fst-page-sticker-left{
+     background-image: url(../img/fastival-sticker-left.png);
+}
+ .fst-page-sticker-right{
+     background-image: url(../img/fastival-sticker-right.png);
+}
+ .fst-page-sticker-left, .fst-page-sticker-right{
+     background-position: bottom center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     color: #fff;
+}
+ .fst-page-sticker-left {
+     font-size: 20px;
+     line-height: 19.94px;
+     font-family: 'Whitney-Medium';
+     padding: 2px 15px;
+}
+ .fst-page-sticker-right {
+     font-size: 25px;
+     font-family: 'Whitney-Semibold';
+}
+ .fst-page-sticker-right span {
+     font-size: 30px;
+     font-weight: 700;
+     display: block;
+     margin-top: 15px;
+}
+ .fastival-mr-btm-35px {
+     margin-bottom: 35px;
+}
+ .fst-page-sticker-left p {
+     padding-top: 82px;
+}
+.fst-page-sticker-right.new-fst-page-sticker-right {
+    text-align: center;
+}
+.fst-page-sticker-right.new-fst-page-sticker-right p {
+	padding-top: 21px;
+	padding-bottom: 107px;
+}
+ .fst-sticker-bottom-content {
+     font-family: 'Whitney-Medium';
+     text-align: justify;
+     line-height: 19.94px;
+     padding-bottom: 30px;
+}
+ .interactive-map-bottom-text {
+     font-family: 'Whitney-Medium';
+     padding: 30px 0;
+     text-align: justify;
+     line-height: 19.94px;
+}
+ .fst-bottom-absolute-img {
+     position: relative;
+     padding-top: 256px;
+}
+ .fst-bottom-absolute-img img {
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     z-index: 99;
+}
+ .footer-top-area.fastival-footer-area {
+     padding-top: 0 !important;
+}
+.fst-bottom-absolute-img.new-fst-bottom-absu-img img {
+    max-width: 1170px;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+/*Interactive Map CSS */
+.interactive-map-wrapper {
+    background-image: url(../img/interactive-map-bg-frame.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 617px;
+    padding-top: 16px;
+}
+ .map {
+     position: relative;
+     margin-left: auto;
+     margin-right: auto;
+     max-width: 776px;
+}
+ .map img {
+     max-width: 100%;
+}
+ .marker {
+     position: absolute;
+     width: 3.5%;
+     height: 5.1%;
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: center;
+     -webkit-justify-content: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -webkit-align-items: center;
+     -ms-flex-align: center;
+     align-items: center;
+     cursor: pointer;
+}
+ .marker__popup {
+     background-color: #f1ebe3;
+     display: block;
+     height: auto;
+     width: 100%;
+     font-size: 16px;
+}
+.marker__popup p {
+    font-weight: 700;
+}
+ .marker svg:nth-child(1) {
+     -webkit-filter: drop-shadow(0 0 1px rgba(0, 0, 0, .5));
+     filter: drop-shadow(0 0 1px rgba(0, 0, 0, .5));
+     position: absolute;
+     left: 0;
+     right: 0;
+     top: 0;
+     bottom: 0;
+     fill: #fff;
+}
+ .marker svg:nth-child(2) {
+     display: block;
+     height: 20px;
+     width: 20px;
+     fill: #000;
+     position: relative;
+}
+ .marker span {
+     position: relative;
+     z-index: 2;
+     font-size: 14px;
+     font-family: Whitney-Semibold,sans-serif;
+}
+ .marker--red {
+     color: #fff;
+}
+ .marker--red svg:nth-child(1) {
+     fill: #a21d22;
+}
+ .marker--orange {
+     color: #fff;
+}
+ .marker--orange svg:nth-child(1) {
+     fill: #e7702c;
+}
+ .marker__hidden {
+     display: none;
+}
+ .marker--1 {
+     left: 16.4%;
+     top: 25.4%;
+}
+ .marker--1 svg:nth-child(2) {
+     width: 17px;
+     height: 17px;
+     position: relative;
+     top: -1px;
+}
+ .marker--2 {
+     left: 20.1%;
+     top: 30.3%;
+}
+ .marker--3 {
+     left: 28.5%;
+     top: 40.6%;
+}
+ .marker--4 {
+     left: 27.5%;
+     top: 50%;
+}
+ .marker--4 svg:nth-child(2) {
+     width: 17px;
+     height: 17px;
+     position: relative;
+}
+ .marker--5 {
+     left: 63%;
+     top: 50.1%;
+}
+ .marker--6 {
+     left: 45.8%;
+     top: 39.6%;
+}
+ .marker--7 {
+     left: 67.9%;
+     top: 43.7%;
+}
+ .marker--8 {
+     left: 60.4%;
+     top: 53%;
+}
+ .marker--8 svg:nth-child(2) {
+     width: 17px;
+     height: 17px;
+     position: relative;
+}
+ .marker--9 {
+     left: 64.4%;
+     top: 56.4%;
+}
+ .marker--10 {
+     left: 84.3%;
+     top: 63.4%;
+}
+ .marker--11 {
+     left: 81.1%;
+     top: 59.1%;
+}
+ .marker--12 {
+     left: 44.8%;
+     top: 63.4%;
+}
+ .marker--13 {
+     left: 47.9%;
+     top: 67.8%;
+}
+ .marker--13 svg:nth-child(2) {
+     width: 17px;
+     height: 17px;
+     position: relative;
+}
+ .marker--14 {
+     left: 51.3%;
+     top: 72.5%;
+}
+ .marker--15 {
+     left: 59.7%;
+     top: 86.7%;
+}
+ .marker--15 svg:nth-child(2) {
+     width: 17px;
+     height: 17px;
+     position: relative;
+     top: -2px;
+}
+ .marker--16 {
+     left: 62.9%;
+     top: 90.4%;
+}
+ .marker--17 {
+     left: 64.4%;
+     top: 69.3%;
+     z-index: 2;
+}
+ .marker--18 {
+     left: 31.2%;
+     top: 57.1%;
+}
+ .marker--19 {
+     left: 17.8%;
+     top: 36.3%;
+}
+ .marker--20 {
+     left: 8.4%;
+     top: 21.3%;
+}
+ .marker--21 {
+     left: 67.3%;
+     top: 69.2%;
+}
+ .marker.marker--active {
+     color: #fff;
+}
+ .marker.marker--active svg:nth-child(1) {
+     fill: #0e7673;
+}
+ .marker.marker--active svg:nth-child(2) {
+     fill: #fff;
+}
+ .marker--red.marker--active {
+     color: #a21d22;
+}
+ .marker--red.marker--active svg:nth-child(1) {
+     fill: #fff;
+}
+ .marker--orange.marker--active {
+     color: #e7702d;
+}
+ .marker--orange.marker--active svg:nth-child(1) {
+     fill: #fff;
+}
+ .tippy-backdrop {
+     background-color: #f1ebe3!important;
+     width: 244px;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+}
+ .tippy-tooltip {
+     background-color: #f1ebe3!important;
+     color: #00233e;
+     border: 3px solid #ab946e;
+     -webkit-border-radius: 10px;
+     border-radius: 10px;
+     text-align: left;
+     padding-left: 30px;
+     padding-right: 30px;
+     width: 244px;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+     position: relative;
+}
+/* Accreditation Page CSS */
+ .reservation-place-wrap {
+     display: flex;
+}
+ .sigle-reserv-block.single-res-arrow-left {
+     flex: 1;
+     position: relative;
+}
+ .sigle-reserv-block.single-res-lrg-block {
+     flex-basis: 60%;
+     position: relative;
+}
+ .sigle-reserv-block.single-res-red-btn {
+     flex-basis: 30%;
+     position: relative;
+}
+ .single-res-lrg-abs-text {
+     position: absolute;
+     left: 0;
+     top: 0;
+     width: 80%;
+     right: 0;
+     margin: auto;
+     bottom: 0;
+     height: 56%;
+}
+ .single-res-lrg-abs-text {
+    font-weight: 600;
+}
+ h1.heading-dots-inc.accredition-title {
+     color: #c00d0e;
+     margin-top: 35px;
+}
+ h1.heading-dots-inc.accredition-title:after, h1.heading-dots-inc.accredition-title:before {
+     width: 37%;
+}
+ .single-res-red-abs-text h2 {
+     position: absolute;
+     top: 0;
+     left: 0;
+     text-align: center;
+     width: 90%;
+     height: 60%;
+     margin: auto;
+     bottom: 0;
+     right: 0;
+     color: #fff;
+     font-size: 36px;
+}
+ .media-rep-wrap p{
+     font-family: 'Whitney-Medium';
+}
+ .media-rep-wrap h2 {
+     font-size: 40px;
+     color: #c00d0e;
+     text-align: center;
+     margin: 35px 0;
+}
+ .media-rep-wrap p strong {
+     font-size: 20px;
+}
+ .work-schedule-table table tr th {
+     font-size: 20px;
+     padding: 15px 0;
+     font-family: 'Whitney-Semibold';
+}
+ .work-schedule-table table tr.back-color {
+     background: #e7e1d6;
+}
+ .work-schedule-table table tr.back-color td {
+     padding: 15px 5px;
+     font-family: 'Whitney-Medium';
+}
+ a.res-btn h4 {
+     font-size: 25.74px;
+}
+ .res-btn-div {
+     position: relative;
+     text-align: center;
+     margin-top: 28px;
+     margin-bottom: 50px;
+}
+ a.res-btn {
+     position: absolute;
+     left: 0;
+     top: 0;
+     height: 55%;
+     bottom: 0;
+     margin: auto;
+     display: block;
+     color: #fff;
+     text-align: center;
+     right: 0;
+}
+ p.margin-top {
+     margin-top: 40px;
+}
+ .page-quick-link.new-ex-page-quicklink {
+     padding-top: 25px;
+}
+ .page-quick-link.new-ex-page-quicklink a:nth-child(2) {
+     color: #000;
+}
+ .sigle-reserv-block.single-res-arrow-left img {
+     position: absolute;
+     left: 0;
+     right: 0;
+     width: 68px;
+     height: 54px;
+     margin: auto;
+     bottom: 0;
+     top: -20px;
+}
+/* Media Accerediation Area CSS */
+ .body-content-center.media__accerediation--title h1 {
+     color: #b5191e;
+     font-size: 50px;
+     text-align: center;
+     margin: 50px 0px;
+     margin-top: 0;
+}
+ .body-content-center.media__accerediation--title h1:after, .body-content-center.media__accerediation--title h1:before{
+     width: 5%;
+}
+ a.media-accer-banner-image {
+     display: block;
+     text-align: center;
+     margin-top: 30px;
+     margin-bottom: 40px;
+}
+ .form-control.media__accerediation--form-select {
+     width: 32%;
+     display: inline-block;
+     padding-right: 5px;
+     padding-left: 5px;
+     position: relative;
+}
+ form.media__accerediation--form {
+     position: relative;
+     z-index: 999;
+}
+ span.input-group-addon.time-arrow img {
+     width: 6px;
+     height: 7px;
+     right: 10px;
+}
+ .time-date-group {
+     display: initial;
+     position: relative;
+}
+ span.input-group-addon.time-arrow {
+     position: absolute;
+     left: 56px;
+     top: 0;
+     width: 10px;
+     height: 10px;
+     bottom: 0;
+     margin: auto;
+}
+ .red-start {
+     display: inline-block;
+     padding-left: 22px;
+}
+ .m__r {
+     margin-right: 5px 
+}
+ .padding-0 {
+     padding: 0px 
+}
+ .media__accerediation--form-text {
+     font-size: 14px;
+     font-family: 'Whitney-Semibold';
+     margin-top: 18px;
+}
+ .media__accerediation--form-text span {
+     color: #b5191e 
+}
+ .media__accerediation--form-btn {
+     display: block;
+     margin: 0 auto;
+     width: 204px;
+     margin-top: 30px;
+}
+ .add-field {
+     display: inline-block;
+     background: #565757;
+     color: #fff;
+     width: 25px;
+     height: 25px;
+     text-align: center;
+     font-size: 14px;
+     margin-left: 8px;
+     cursor: pointer;
+     line-height: 25px;
+}
+ span.input-group-addon img {
+     position: absolute;
+     right: 15px;
+     top: 0;
+     width: 27px;
+     height: 25px;
+     bottom: 0;
+     margin: auto;
+}
+ .form-group {
+     position: relative;
+}
+ .input-group-addon {
+     padding: 0 !important;
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 1;
+     color: #555;
+     text-align: center;
+     background-color: transparent !important;
+     border: transparent !important;
+     border-radius: 4px;
+}
+ form.media__accerediation--form input {
+     font-size: 18px;
+     padding: 20px 15px;
+}
+ form.media__accerediation--form .form-group {
+     margin-bottom: 10px;
+}
+/* Regulation Page CSS */
+ .single-regulation-content-block h1 {
+     color: #b5191e;
+     font-size: 48px;
+     margin-top: 25px;
+     margin-bottom: 10px;
+}
+ .single-regulation-content-block {
+     text-align: justify;
+     font-family: 'Whitney-Medium';
+}
+ .single-regulation-content-block ul {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+}
+ .single-regulation-content-block ul li {
+     position: relative;
+     padding-left: 15px;
+     line-height: 19.94px;
+     font-size: 20px;
+     margin-bottom: 10px;
+}
+ .single-regulation-content-block ul li:before {
+     position: absolute;
+     left: 0;
+     top: 10px;
+     content: "";
+     background: #000;
+     width: 5px;
+     height: 5px;
+     border-radius: 50%;
+}
+ .single-regulation-content-block p span{
+     font-family: 'Whitney-Semibold';
+     font-size: 30px;
+     line-height: 30px;
+}
+ .single-regulation-content-block p{
+     line-height: 19.94px;
+     font-size: 20px;
+     text-align: justify;
+     font-family: 'Whitney-Medium';
+}
+/* New Festival page CSS */
+ .fans-area.new-home-page-fans.fastival-main-block.new-fst-pag-mblock {
+     padding-bottom: 0;
+}
+.new-single-fs-banner-btm-block{
+    background-image: url(../img/fastival-text-bg-frame.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*
+ a.new-single-fs-banner-btm-block {
+     display: block;
+     position: relative;
+     margin-bottom: 26px;
+     color: #00599d;
+}
+
+ a.new-single-fs-banner-btm-block h1 {
+     position: absolute;
+     top: 0;
+     left: -20px;
+     width: 73%;
+     right: 0;
+     margin: auto;
+     text-align: center;
+     padding: 0;
+     font-size: 30px;
+     line-height: 29px;
+     height: 58px;
+     bottom: 0;
+}
+*/
+.dis-table h1{
+    font-size: 30px;
+    line-height: 29px;
+    text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+.new-single-fs-banner-btm-block {
+  display: block;
+  height: 99px;
+  width: 100%;
+  margin-bottom: 26px;
+}
+.dis-table {
+  display: table;
+  width: 85%;
+  height: 99px;
+    margin: auto;
+}
+
+ .single-fst-cnt-date-block h1 {
+     color: #c00d0e;
+     font-size: 73.92px;
+     margin: 0;
+     padding: 0;
+}
+ .single-fst-cnt-date-block h1 span {
+     display: block;
+     font-size: 28.41px;
+     margin-top: -13px;
+     line-height: 27.58px;
+}
+ .fst-right-date-wrap {
+     width: 230px;
+     float: left;
+     margin-top: -21px;
+}
+ .single-fst-cnt-date-block {
+     width: 30%;
+     float: left;
+}
+ .single-fst-cnt-date-block.arrow-icon img {
+    width: 35px;
+    height: 28px;
+    position: absolute;
+    left: 0;
+    top: 35px;
+    bottom: 0;
+    margin: auto;
+    right: 0;
+}
+ .single-fst-cnt-date-block.arrow-icon {
+     position: relative;
+     height: 122px;
+}
+ .fst-cntnt-right.new-fst-cnt-right p{
+     padding-top: 15px;
+}
+ a.learn-pro-absu-btn-text h4 {
+     color: #00296b;
+     font-size: 24px;
+}
+ .learn-program-btn-frame img {
+    position: relative;
+}
+ a.learn-pro-absu-btn-text {
+     display: block;
+     position: absolute;
+     top: 13px;
+     left: 0;
+     width: 84%;
+     right: 0;
+     margin: auto;
+}
+ .learn-program-btn-frame {
+     position: relative;
+     width: 227px;
+     margin: auto;
+     padding-bottom: 15px;
+}
+ .fst-bottom-absolute-img.new-fst-bottom-absu-img {
+     padding-top: 300px;
+     position: relative;
+}
+ .padding-top-45px{
+     padding-top: 45px;
+}
+.fst-page-sticker-left.new-fast-page-st-left{
+    font-size: 20px;
+    line-height: 19.94px;
+    font-family: 'Whitney-Medium';
+    padding: 2px 15px;
+}
+
+/* New Transport Page CSS */
+a.new-trs-absolut-text h1 {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 39.73px;
+}
+
+.new-transport-page-title {
+    position: relative;
+    text-align: center;
+    width: 422px;
+    margin: auto;
+    margin-top: 84px;
+    margin-bottom: 35px;
+}
+
+a.new-trs-absolut-text {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+.new-transport-content {
+    
+     font-family: 'Whitney-Medium';
+}
+
+.new-transport-content p {
+    margin-bottom: 20px;
+}
+.body-content-center.new-trans-title-dots h1:after, .body-content-center.new-trans-title-dots h1:before {
+    width: 14%;
+}
+.single-transport-map-wrap {
+    margin-bottom: 60px;
+}
+.single-transport-map-wrap:first-child {
+    margin-top: 45px;
+}
+p.page-footer-text.new-trns-footer-text {
+    text-align: center;
+    margin-bottom: 55px;
+}
+.new-transport-content ul {
+    padding: 0;
+    padding-left: 15px;
+}
+
+/* Acre zone CSS */
+a.new-trs-absolut-text.acre-zone-title h1 {
+    color: #00599d;
+    text-transform: none;
+}
+
+a.new-trs-absolut-text.acre-zone-title {
+    width: 80%;
+    right: 0;
+    margin: auto;
+}
+
+.new-transport-page-title.acre-zn-page-tt {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.body-content-center.acre-zone-title-dots h1:after, .body-content-center.acre-zone-title-dots h1:before {
+    width: 17%;
+}
+
+h1.heading-dots-inc.transport-title.acre-zone-title-bn {
+    margin: 0 0 45px;
+}
+
+.acre-zone-left-content {
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Whitney-Medium';
+}
+
+img.ac-zn-lft-btm-img {
+    overflow: hidden;
+    max-height: 189px;
+}
+
+.acr-zn-top-content {
+    margin-bottom: 65px;
+}
+
+.acre-main-body-content {
+    font-size: 18px;
+    font-family: 'Whitney-Medium';
+}
+
+.acre-zone-bottom-banner img {margin-top: -230px;}
+
+p.page-footer-text.acre-zone-footer-text {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 90px;
+}
+
+.acre-zone-left-content span {
+    color: #b5191e;
+    text-transform: uppercase;
+    font-family: 'Whitney-Semibold';
+}
+
+/* TP Chapters CSS */
+.tp-chp-btn-bottom-text{
+    background-image: url(../img/tp-blu-btn-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.fans-area.new-home-page-fans.fastival-main-block.tp-chp-mainbody {
+    margin-top: 70px;
+}
+
+.tp-chp-btn-bottom-text {
+    color: #fff;
+    padding: 40px 50px;
+    font-size: 20px;
+}
+
+.body-content-center.tp-chp-title-dots h1 {
+    font-size: 40px;
+}
+
+.body-content-center.tp-chp-title-dots h1:after, .body-content-center.tp-chp-title-dots h1:before {
+    width: 16%;
+}
+.kgd-city-map-btn{
+    background-image: url(../img/kgd-map-btn-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+a.kgd-city-map-btn {
+    width: 229px;
+    height: 85px;
+    display: inline-block;
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+    line-height: 28px;
+    float: right;
+    margin-top: -111px;
+    margin-right: 40px;
+    z-index: 999;
+}
+a.kgd-city-map-btn span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80%;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    height: 58%;
+}
+
+.kgd-city-map img {
+    position: relative;
+}
+
+p.red-text-tp {
+    color: #b5191e;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-top: 55px;
+    font-weight: 700;
+}
+
+.kgd-city-map-content p span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.body-content-center.tp-chp-title-dots.tp-red-title h1 {
+    color: #b5191e;
+    margin: 35px 0;
+}
+
+.body-content-center.tp-chp-title-dots.tp-red-title h1:after, .body-content-center.tp-chp-title-dots.tp-red-title h1:before {
+    width: 28%;
+}
+
+.kgd-city-map-content {
+    margin-top: 35px;
+    font-size: 20px;
+    font-family: 'Whitney-Medium';
+}
+.kgd-city-map-content ul, .kgd-city-map-content p {
+    font-family: 'Whitney-Medium';
+}
+.tp-kgd-content-mdl-btn{
+    background-image: url(../img/kgd-city-map-into-btn.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.tp-kgd-content-mdl-btn h1 {
+	font-size: 40px;
+	color: #fff;
+	position: absolute;
+	left: 0;
+	top: 45px;
+	width: 80%;
+	right: 0;
+	margin: auto;
+}
+
+.tp-kgd-content-mdl-btn {
+    width: 55%;
+    height: 200px;
+    text-align: center;
+    position: relative;
+    margin: 35px auto;
+}
+
+.body-content-center.tp-chp-title-dots.tp-red-title h1 span {
+    display: block;
+    font-size: 30px;
+    color: #000;
+}
+h1.heading-dots-inc.tp-park-title {
+    color: #000 !important;
+}
+.fans-area.new-home-page-fans.fastival-main-block.tp-chp-mainbody {
+    padding-bottom: 0;
+}
+
+/* Pedestrians and Cyclists Page CSS */
+
+.single-trns-pad-cyc-right-title h1 {
+    position: relative;
+    padding-bottom: 20px;
+    color: #005ea5;
+}
+.single-trns-pad-cyc-right-title h1::before {
+	background-image: url(../img/heading-bg-after.png);
+	content: "";
+	width: 100%;
+	height: 19px;
+	position: absolute;
+	right: 0;
+	background-repeat: no-repeat;
+	background-position: left center;
+	bottom: 0;
+	margin: auto;
+}
+.single-trns-pad-cyc-left-content {
+    font-size: 18px;
+    text-align: justify;
+    margin: 30px 0;
+    margin-bottom: 40px;
+    width: 60%;
+    font-family: 'Whitney-Medium';
+}
+.single-po-rel-block {
+    position: relative;
+}
+.single-trns-pad-cyc-right-title {
+    position: absolute;
+    width: 34%;
+    bottom: 20px;
+    left: 65%;
+}
+p.page-footer-text.trns-pad-cyc-btm-text {
+    text-align: center;
+    margin: 45px 0;
+}
+a.new-trs-absolut-text.trns-pad-cyc-txt {
+    display: block;
+    position: absolute;
+    top: 22px;
+    left: 0;
+    width: 84%;
+    right: 0;
+    margin: auto;
+}
+a.new-trs-absolut-text.trns-pad-cyc-txt h1 {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 32.73px;
+}
+.new-transport-page-title.trns-pad-cyc-title {
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+/* Fees Page CSS */
+
+.fans-area.body-content-center.fees-area-wrap h1:after {width: 50%;}
+.fans-area.body-content-center.fees-area-wrap h1:before {width: 42%;}
+h1.heading-dots-inc.fees-page-title {
+    margin: 0 0 35px;
+}
+
+.fees-page-content {
+    margin-top: 55px;
+    font-size: 18px;
+    font-family: 'Whitney-Medium';
+}
+p.page-footer-text.fees-page-bottom-text {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 90px;
+    font-weight: 700;
+}
+
+/* Bus Page CSS */
+a.new-trs-absolut-text.bus-page-title h1 {
+    font-size: 37px;
+    line-height: auto;
+}
+
+a.new-trs-absolut-text.bus-page-title {
+    top: 35px;
+    right: 0;
+}
+
+img.bus-page-left-img {
+    float: left;
+    margin-right: 30px;
+    width: 660px;
+    height: 275px;
+    margin-bottom: 40px;
+}
+
+.but-top-right-content {font-size: 18px;margin-bottom: 85px;font-family: 'Whitney-Medium';}
+
+
+.new-transport-page-title.acre-zn-page-tt.bus-page-title {
+    margin-bottom: 35px;
+}
+h1.heading-dots-inc.transport-title.bus-title-bn {
+    margin: 0 0 55px;
+}
+
+.bus-btm-left-content img {
+    margin-bottom: 20px;
+}
+
+.bus-btm-left-content {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 23px;
+    font-family: 'Whitney-Medium';
+}
+.bus-btm-left-content img {
+	margin-bottom: 3px;
+}
+img.bus-btm-dotline {
+    margin-top: 15px;
+}
+p.page-footer-text.bus-footer-text {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 180px;
+}
+
+
+.bus-content-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.single-bus-cntnt-img {
+    margin-bottom: 20px;
+    display: block;
+    flex-basis: 32%;
+}
+
+.buse-content-block-imgs {
+    margin: 30px 0;
+    margin-bottom: 0;
+}
+/* Check Box CSS */
+.checkbox label {
+    position: relative;
+    padding-left: 30px;
+}
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+    position: absolute;
+    margin-top: 4px;
+    left: 0 !important;
+    width: 20px;
+    height: 20px;
+    top: -3px !important;
+}
+
+/* Mapp Page CSS */
+.mapp-area-title.mapp-title-left img {
+    position: relative;
+}
+
+h1.mapp-title-text {
+    text-align: center;
+    position: absolute;
+    top: 25px;
+    width: 90%;
+    color: #fff;
+    font-size: 60px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    line-height: 55px;
+}
+
+.mapp-area-title.mapp-title-left span {color: #b4181e;font-size: 22px;margin-top: 15px;display: block;    font-family: 'DushaPlus-Regular';}
+
+.mapp-area-title.mapp-title-right h1 {
+    color: #000;
+}
+
+.mapp-area-main-wrap {
+    margin-top: 70px;
+}
+
+.mapp-area-title {
+    text-align: center;
+}
+
+.down-arrow img {
+    width: 54px;
+    height: 68px;
+    margin: 15px auto;
+}
+
+.down-arrow {
+    width: 100%;
+    text-align: center;
+}
+
+.mapp-left-content h2 {
+    font-size: 31px;
+}
+
+.mapp-left-content h4 {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.mapp-left-content h4 span {
+    color: #b4181e;
+}
+
+.mapp-left-content.mapp-content-right h4 a {
+    color: #b4181e;
+    text-decoration: underline;
+}
+
+.mapp-left-content.mapp-content-right h4 {
+}
+
+.mapp-left-content.mapp-content-right {
+    padding-left: 168px;
+}
+
+.mapp-left-content {
+    padding-left: 90px;
+}
+
+.mapp-bottom-red-text {
+    font-size: 34px;
+    color: #b4181e;
+    line-height: 30px;
+    text-align: center;
+    padding: 45px 0;
+    font-family: 'Whitney-Semibold';
+}
+
+.mapp-bottom-red-text a {
+    color: #000;
+}
+/* New Home Page CSS */
+.nw-home-banner-btm-title {
+    position: relative;
+    margin: 40px 0;
+    display: block;
+}
+
+.nw-hm-bn-btm-tt-abs h1 {
+    font-size: 41px;
+}
+
+/* Map Page CSS */
+img.xzoom.zoom-large-img {
+    width: 50% !important;
+}
+.xzoom-thumbs.map-zoom-small-img {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.xzoom-thumbs.map-zoom-small-img a {
+    display: inline-block;
+    margin-left: -5px;
+    margin-right: 5px;
+}
+.zoom-big-img {
+    margin: 50px 0;
+    position: relative;
+}
+object:focus {
+    outline: none;
+}
+.zm-download-btn {
+    width: 35%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.zm-download-title {
+    width: 48%;
+    float: left;
+}
+a.zm-dw-btns {
+    display: inline-block;
+    font-weight: 700;
+    margin-right: 20px;
+    text-decoration: underline;
+}
+
+.zm-button {
+    width: 48%;
+    float: right;
+}

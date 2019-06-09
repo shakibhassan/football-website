@@ -1,0 +1,1316 @@
+/* Medium Layout: 1280px. */
+ @media only screen and (min-width: 992px) and (max-width: 1200px) {
+     .header-banner-img {
+         max-width: 400px;
+         height: 240px;
+    }
+     .responsive-menu .slicknav_menu {
+         display: none;
+    }
+     .fans-right-list {
+         height: 90px;
+         width: 100%;
+    }
+     .news-img-border {
+         height: 120px;
+    }
+     .fanid-left-img {
+         width: 90%;
+    }
+    /* new CSS */
+     .buy-ticket-featured-btns {
+         font-size: 36px;
+         height: 59px;
+         line-height: 50px;
+    }
+     .buy-ticket-featured-btns.terms-condition-btn {
+         font-size: 25px;
+         line-height: 25px;
+    }
+     .body-content-center.testinside-page-title h1::before, .body-content-center.testinside-page-title h1::after {
+         width: 2%;
+    }
+     .route-to-kgd.body-content-center h1::before, .route-to-kgd.body-content-center h1::after {
+         width: 8%;
+    }
+     .transport-map.body-content-center h1::before, .transport-map.body-content-center h1::after {
+         width: 19% !important;
+    }
+     .home-test-mtch-banner-div {
+         height: 219px;
+    }
+     .home-test-mtch-banner-div h1 {
+         font-size: 60px;
+    }
+     .home-text-mtch-distble {
+         height: 219px;
+    }
+     .feedback-button h1 {
+         padding: 40px 97px;
+         font-size: 36px;
+         line-height: 36px;
+    }
+     .feedback-button {
+         height: 184px;
+    }
+    /* New CSS Jun 18*/
+     .single-fs-banner-btm-block {
+         height: 71px;
+         width: 260px;
+    }
+     .single-fs-banner-btm-block h1 {
+         font-size: 30px;
+         line-height: 25px;
+    }
+     .fst-page-sticker-right p {
+         font-size: 20px;
+    }
+     .fst-page-sticker-left p {
+         font-size: 18px;
+    }
+     .fans-area.new-home-page-fans.fastival-main-block {
+         padding-bottom: 260px;
+    }
+    /* Media Accreditation page*/
+     .body-content-center.media__accerediation--title h1::after, .body-content-center.media__accerediation--title h1::before {
+         width: 20%;
+    }
+    /*New Festival Page*/
+     a.new-single-fs-banner-btm-block h1 {
+         width: 80%;
+         font-size: 25px;
+         line-height: 20px;
+         height: 40px;
+    }
+     .fst-page-sticker-left p {
+         padding-top: 90px;
+    }
+     .fst-page-sticker-right p {
+         padding-bottom: 99px;
+         margin-top: 74px;
+    }
+     .fastival-mr-btm-35px {
+         margin-bottom: 0;
+    }
+     .map {
+         max-width: 635px;
+    }
+     .interactive-map-wrapper {
+         height: 506px;
+    }
+     .fans-area.new-home-page-fans.fastival-main-block.new-fst-pag-mblock {
+         padding-bottom: 0;
+    }
+     .new-single-fs-banner-btm-block {
+        height: 80px;
+        width: 100%;
+    }
+     .dis-table {
+        height: 80px;
+    }
+    /*Regulation Page*/
+     .single-regulation-content-block h1 {
+         font-size: 40px;
+    }
+    /* Accordiation Page */
+     .single-res-lrg-abs-text {
+         height: 76%;
+    }
+     h1.heading-dots-inc.accredition-title::after, h1.heading-dots-inc.accredition-title::before {
+         width: 30%;
+    }
+     /* New Transport Page CSS */
+     .body-content-center.new-trans-title-dots h1::after, .body-content-center.new-trans-title-dots h1::before {
+        width: 6%;
+    }
+     /* Acre Zone CSS */
+     .body-content-center.acre-zone-title-dots h1::after, .body-content-center.acre-zone-title-dots h1::before {
+        width: 10%;
+    }
+     .acre-zone-bottom-banner img {
+        margin-top: -160px;
+    }
+     /* TP Chapters */
+     .tp-chp-btn-bottom-text {
+        margin-bottom: 30px;
+    }
+    .body-content-center.tp-chp-title-dots h1 {
+        font-size: 35px;
+    }
+     .body-content-center.tp-chp-title-dots h1::after, .body-content-center.tp-chp-title-dots h1::before {
+        width: 15%;
+    }
+     .tp-kgd-content-mdl-btn {
+        width: 66%;
+    }
+     
+     /* Fees page CSS */
+     .fans-area.body-content-center.fees-area-wrap h1::after, .fans-area.body-content-center.fees-area-wrap h1::before {
+        width: 40%;
+    }
+     
+     /* Mapp Page CSS */
+     h1.mapp-title-text {
+        top: 20px;
+        font-size: 50px;
+    }
+     .mapp-left-content {
+        padding-left: 60px;
+    }
+     .mapp-left-content.mapp-content-right {
+        padding-left: 117px;
+    }
+     
+    /* New Home page CSS */
+     .nw-hm-bn-btm-tt-abs {
+        top: 15px;
+    }
+     .nw-hm-bn-btm-tt-abs h1 {
+        font-size: 36px;
+    }
+     .nw-hm-bn-btm-tt-abs.nw-tt-blue-tt {
+        top: 40px;
+    }
+     .nw-hm-bn-btm-tt-abs.nw-tt-blue-tt h1 {
+        font-size: 50px;
+    }
+
+     
+     
+     
+}
+/* Tablet Layout: 768px. */
+ @media only screen and (min-width: 768px) and (max-width: 991px) {
+     .responsive-menu .slicknav_menu {
+         display: none;
+    }
+     .banner-time {
+         height: 90px;
+         width: 90px;
+    }
+     .banner-time h1 {
+         margin-top: 12px;
+         font-size: 32px;
+    }
+     .banner-time span {
+         font-size: 18px;
+    }
+     .header-banner-img {
+         max-width: 350px;
+         height: 220px;
+    }
+     .header-top {
+         padding-top: 10px;
+    }
+     .logo img {
+         margin-bottom: -122px;
+         max-width: 240px;
+    }
+     .nav-menu li a {
+         padding: 5px 15px;
+    }
+     .nav-menu {
+         padding-bottom: 20px;
+    }
+     .telephone {
+         margin-bottom: 5px;
+    }
+     .fans-right-list {
+         width: 56%;
+    }
+     .single-news-block {
+         margin-bottom: 30px;
+    }
+     .organizer-single-block {
+         margin-bottom: 30px;
+    }
+     .single-organizer-bottom-block {
+         margin-bottom: 30px;
+    }
+     .footer-cartoon {
+         top: -140px;
+    }
+     .about-kaliningrad-right-img {
+         text-align: center;
+         margin: 30px 0;
+    }
+     .body-content-center.history-page-title h1::before {
+         width: 8%;
+    }
+     .body-content-center.history-page-title h1::after {
+         width: 8%;
+    }
+     .news-homepage-filtermenu li {
+         margin-bottom: 15px;
+    }
+     .news-cotent p {
+         margin-top: 15px;
+    }
+     .fans-right-content {
+         text-align: center;
+    }
+    /* new CSS */
+     .buy-ticket-featured-btns {
+         font-size: 28px;
+         height: 45px;
+         line-height: 38px;
+    }
+     .buy-ticket-featured-btns.terms-condition-btn {
+         font-size: 18px;
+         line-height: 18px;
+    }
+     .testinside-page-title h1, .route-to-kgd h1 {
+         font-size: 25px;
+    }
+     .body-content-center.testinside-page-title h1::before, .body-content-center.testinside-page-title h1::after {
+         width: 5%;
+    }
+     .route-to-kgd.body-content-center h1::before, .route-to-kgd.body-content-center h1::after {
+         width: 11%;
+    }
+     .transport-map.body-content-center h1::before, .transport-map.body-content-center h1::after {
+         width: 22% !important;
+    }
+     .test-inside-accordion-area .panel-title a {
+         font-size: 30px;
+    }
+     .margin-bottom-respon {
+         margin-bottom: 30px;
+    }
+     .buy-ticket-bottom-content h3 {
+         font-size: 20px;
+    }
+     .home-test-mtch-banner-div {
+         height: 163px;
+    }
+     .home-test-mtch-banner-div h1 {
+         font-size: 45px;
+    }
+     .home-text-mtch-distble {
+         height: 163px;
+    }
+     .feedback-button {
+         height: 214px;
+    }
+     .feedback-button h1 {
+         padding: 40px 143px;
+         font-size: 36px;
+         line-height: 36px;
+    }
+    /* New CSS Jun 18*/
+     .single-fs-banner-btm-block {
+         height: 54px;
+         width: 196px;
+    }
+     .single-fs-banner-btm-block h1 {
+         font-size: 22px;
+         line-height: 18px;
+    }
+     .fst-cntnt-img img {
+         width: 100%;
+         margin-bottom: 30px;
+    }
+     .fst-page-sticker-right p {
+         font-size: 20px;
+         padding-bottom: 125px;
+    }
+     .fst-page-sticker-left p {
+         font-size: 18px;
+         padding-top: 145px;
+    }
+     .fans-area.new-home-page-fans.fastival-main-block {
+         padding-bottom: 200px;
+    }
+     .body-content-center.fastival-dot-line h1::before, .body-content-center.fastival-dot-line h1::after {
+         width: 22%;
+    }
+    /* Media Accreditation page*/
+     .body-content-center.media__accerediation--title h1::after, .body-content-center.media__accerediation--title h1::before {
+         width: 21%;
+    }
+     .body-content-center.media__accerediation--title h1 {
+         font-size: 40px;
+    }
+     .fst-bottom-absolute-img {
+         padding-top: 195px;
+    }
+    /*New Festival Page*/
+     a.new-single-fs-banner-btm-block h1 {
+         width: 80%;
+         font-size: 25px;
+         line-height: 20px;
+         height: 40px;
+    }
+     .fst-page-sticker-left p {
+         padding-top: 90px;
+    }
+     .fst-page-sticker-right p {
+         padding-bottom: 99px;
+         margin-top: 74px;
+    }
+     .fastival-mr-btm-35px {
+         margin-bottom: 35px;
+    }
+     .map {
+         max-width: 476px;
+    }
+     .interactive-map-wrapper {
+         height: 388px;
+    }
+     .fst-bottom-absolute-img.new-fst-bottom-absu-img {
+         padding-top: 215px;
+    }
+     .fans-area.new-home-page-fans.fastival-main-block.new-fst-pag-mblock {
+         padding-bottom: 0;
+    }
+     .fst-page-sticker-left {
+         padding-top: 37px;
+    }
+          .new-single-fs-banner-btm-block {
+        height: 95px;
+        width: 100%;
+    }
+    .dis-table {
+        height: 95px;
+        width: 70%;
+        margin: auto;
+    }
+    /*Regulation Page*/
+     .single-regulation-content-block h1 {
+         font-size: 30px;
+    }
+     .single-regulation-content-block p span {
+         font-size: 22px;
+    }
+     .single-regulation-content-block p, .single-regulation-content-block ul li {
+         font-size: 18px;
+    }
+    /* Accordiation Page */
+     .single-res-lrg-abs-text {
+         height: 76%;
+    }
+     h1.heading-dots-inc.accredition-title::after, h1.heading-dots-inc.accredition-title::before {
+         width: 30%;
+    }
+     .sigle-reserv-block.single-res-red-btn {
+         display: inline-block;
+    }
+     .sigle-reserv-block.single-res-arrow-left img {
+         top: 0;
+         position: relative;
+         margin: 25px 0;
+         transform: rotate(90deg);
+    }
+     .single-res-red-abs-text h2 {
+         width: 80%;
+         height: 50%;
+    }
+     .reservation-place-wrap {
+         display: block;
+         text-align: center;
+    }
+     /* New Transport Page */
+     .single-transport-map-wrap h1 {
+        font-size: 28px;
+    }
+    .body-content-center.new-trans-title-dots h1::after, .body-content-center.new-trans-title-dots h1::before {
+        width: 5%;
+    }
+     /* Acre Zone CSS */
+     .body-content-center.acre-zone-title-dots h1::after, .body-content-center.acre-zone-title-dots h1::before {
+        width: 3%;
+    }
+     .acre-zone-bottom-banner img {
+        margin-top: -120px;
+    }
+     img.ac-zn-lft-btm-img {
+        width: 100%;
+        max-height: 230px;
+    }
+     .acre-zone-left-content {
+        margin-bottom: 30px;
+    }
+    p.page-footer-text.acre-zone-footer-text {
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+     /* TP Chapters */
+     .tp-chp-btn-bottom-text {
+        margin-bottom: 30px;
+    }
+    .body-content-center.tp-chp-title-dots h1 {
+        font-size: 30px;
+    }
+     .body-content-center.tp-chp-title-dots h1::after, .body-content-center.tp-chp-title-dots h1::before {
+        width: 8%;
+    }
+    .tp-kgd-content-mdl-btn {
+        width: 90%;
+        height: 208px;
+    }
+     .body-content-center.tp-chp-title-dots.tp-red-title h1::after, .body-content-center.tp-chp-title-dots.tp-red-title h1::before {
+        width: 19%;
+    }
+          /* Fees page CSS */
+     .fans-area.body-content-center.fees-area-wrap h1::after, .fans-area.body-content-center.fees-area-wrap h1::before {
+        width: 38%;
+    }
+     .bus-bottom-content.body-content-center h1::after, .bus-bottom-content.body-content-center h1::before {
+        width: 22%;
+    }
+    .bus-btm-left-content {
+        margin-bottom: 30px;
+    }
+     
+     /* Mapp Page CSS */
+     .mapp-area-title img {
+        width: 100%;
+    }
+    .mapp-title-text {
+        font-size: 60px !important;
+        width: 60% !important;
+        left: 0px !important;
+        top: 55px !important;
+    }
+     .mapp-area-left {
+        margin-bottom: 60px !important;
+        padding-left: 60px;
+    }
+ 
+     .mapp-left-content.mapp-content-right {
+        padding-left: 117px;
+    }
+         /* New Home page CSS */
+     .nw-hm-bn-btm-tt-abs {
+        top: 15px;
+    }
+     .nw-hm-bn-btm-tt-abs h1 {
+        font-size: 32px;
+    }
+     .nw-hm-bn-btm-tt-abs.nw-tt-blue-tt {
+        top: 38px;
+    }
+     .nw-hm-bn-btm-tt-abs.nw-tt-blue-tt h1 {
+        font-size: 38px;
+    }
+     .single-bus-cntnt-img {
+        flex-basis: 48%;
+    }
+
+     
+     
+     
+}
+/* Mobile Layout: 320px. */
+ @media only screen and (max-width: 767px) {
+     h1 {
+         font-size: 30px;
+    }
+     h3 {
+         font-size: 20px;
+    }
+     .header-area {
+         margin-top: -44px;
+    }
+     .header-area.homepage-header-area {
+         margin-top: -8px;
+    }
+     .body-content-center h1 {
+         font-size: 30px;
+    }
+     .body-content-center.long-dots-line h1::before {
+         content: none;
+    }
+     .body-content-center.long-dots-line h1::after {
+         content: none;
+    }
+     .body-content-center h1::before {
+         content: none;
+    }
+     .body-content-center h1::after {
+         content: none;
+    }
+     .header-top {
+         padding-top: 10px;
+    }
+     .telephone {
+         position: absolute;
+         left: 0;
+         top: -116px;
+         font-size: 13px;
+    }
+     .logo img {
+         margin-bottom: 1px;
+         max-width: 248px;
+         margin-top: 56px;
+    }
+     .nav-menu li a {
+         padding: 5px 15px;
+    }
+     .nav-menu {
+         display: none;
+    }
+     .telephone {
+         margin-bottom: 5px;
+    }
+     .header-banner-content h2 {
+         font-size: 20px;
+         margin: 0 0 30px;
+    }
+     .header-banner-content {
+         text-align: center;
+    }
+     .banner-time {
+         height: 58px;
+         width: 58px;
+    }
+     .header-banner-img {
+         display: none;
+    }
+     .banner-time h1 {
+         font-size: 20px;
+         margin: 0px 0;
+         margin-bottom: -11px;
+         margin-top: 8px;
+    }
+     .banner-time h1 span {
+         font-size: 15px;
+    }
+     .banner-time span {
+         font-size: 15px;
+    }
+     .fans-left-heading .text-right {
+         text-align: center;
+    }
+     .fans-left-heading {
+         text-align: center;
+    }
+     .fans-right-list {
+         width: 250px;
+         height: 60px;
+         background-size: cover;
+         display: block;
+         margin: 15px auto;
+    }
+     .fanid-left-img {
+         width: 172px;
+    }
+     .fans-right-list h4 span {
+         font-size: 14px;
+    }
+     .fans-right-list h4 {
+         font-size: 16px;
+         padding: 12px 10px;
+    }
+     .single-news-block {
+         margin-bottom: 30px;
+         text-align: center;
+    }
+     .organizer-single-block {
+         margin-bottom: 30px;
+    }
+     .single-organizer-bottom-block {
+         margin-bottom: 30px;
+         text-align: center;
+    }
+     .footer-cartoon {
+         top: -73px;
+    }
+     .footer-cartoon img {
+         width: 110px;
+    }
+     .about-kaliningrad-right-img img {
+         margin: 30px 0;
+    }
+     .about-kaliningrad-bottom-img {
+         margin-bottom: 20px;
+         margin-top: 25px;
+    }
+     .page-quick-link {
+         padding: 25px 15px;
+    }
+     .single-news-page-imgs-window .modal-dialog, .modal-dialog {
+         width: 95%;
+    }
+     .news-cotent p {
+         margin-top: 35px;
+    }
+     .ambassador-person-details {
+         text-align: left;
+         padding: 0;
+    }
+     .ambassador-person-details h1 {
+         text-align: center;
+    }
+     .ambassador-person-img img {
+         width: 70%;
+    }
+     .single-ambassador-block {
+         display: block;
+         margin-bottom: 30px;
+    }
+     .documention-item-list img {
+         margin: 20px 0;
+    }
+     .documention-item-list {
+         text-align: center;
+    }
+     .docuemention-main-block {
+         text-align: center;
+    }
+     .modal-window-heading p {
+         padding: 0;
+    }
+     .documention-window-body-content {
+         padding: 0;
+         padding-top: 30px;
+    }
+     .model-document-icon-left {
+         width: 100%;
+         float: none;
+         margin: 20px 0;
+    }
+     .model-window-document-list {
+         margin: 0 0;
+         margin-bottom: 0;
+    }
+     .model-documnent-name {
+         float: none;
+         width: 100%;
+    }
+     .kaliningrad-center-list-title h1 {
+         margin: 0 0 30px;
+    }
+     .Kaliningrad-center-lists .nav-tabs > li {
+         display: block;
+         margin: 10px 0;
+    }
+     .history-img-right {
+         margin-top: 30px;
+         margin-bottom: 30px;
+         max-width: 250px;
+    }
+     .history-bottom-imgs li img {
+         margin-right: 0;
+         margin: 15px 3px;
+    }
+     .news-homepage-filtermenu li {
+         margin-bottom: 15px;
+    }
+     .news-homepage-filtermenu {
+         ;
+         text-align: center;
+    }
+     .news-homepage-itms .single-news-tags {
+         margin: 10px 0;
+    }
+     .margin-bottom-class {
+         text-align: center;
+    }
+     .template-pagination li a {
+         padding: 0 10px;
+    }
+     .mainpage-block.page-development-area {
+         padding: 150px 0;
+    }
+     .stadium-slider .owl-controls .owl-nav div {
+         position: relative;
+         left: 0;
+         margin-right: 15px;
+    }
+     .stadium-slider .owl-controls .owl-nav {
+         text-align: center;
+    }
+     .stadium-slider .owl-controls .owl-nav .owl-next {
+         right: 0;
+    }
+     .single-news-page-imgs-window .carousel-control {
+         display: none;
+    }
+     .single-title-small-dots h1::before {
+         content: none;
+    }
+     .single-title-small-dots h1::after {
+         content: none;
+    }
+     .tickets-body-content img {
+         width: 100%;
+    }
+     p.text-align-center {
+         text-align: left;
+    }
+    /* Resonsive Menu CSS */
+     .responsive-menu .slicknav_menu {
+         display: block;
+         background: none;
+         position: absolute;
+         right: 0;
+         top: 5px;
+         z-index: 999;
+         background: #fff;
+    }
+     .responsive-menu .slicknav_menu li {
+         width: 200px;
+    }
+     .responsive-menu .slicknav_menu li a {
+         color: #015DA3;
+         padding: 12px 5px;
+    }
+     .responsive-menu .slicknav_nav a:hover {
+         background: none;
+         border-radius: 0;
+         text-decoration: underline;
+    }
+     .dropdown-menu {
+         text-align: left !important;
+    }
+     .responsive-menu .slicknav_nav, .slicknav_nav ul {
+         overflow: visible;
+    }
+     .dropdown-menu {
+         top: 80%;
+         min-width: 88px;
+    }
+     .responsive-menu .slicknav_nav ul {
+         margin: 0 0 0 -6px;
+    }
+     .responsive-menu .btn-default.active, .btn-default:active, .open > .dropdown-toggle.btn-default {
+         color: #333;
+         background-color: #e6e6e6;
+         border-color: #adadad;
+    }
+     .responsive-menu .btn .caret {
+         display: none;
+    }
+     .slicknav_nav .slicknav_arrow:hover {
+         color: #015DA3;
+    }
+     .responsive-menu .slicknav_btn {
+         background-color: #fff;
+         border: 1px solid #000;
+    }
+     .responsive-menu .slicknav_menu .slicknav_menutxt {
+         color: #000;
+         text-shadow: 0 0 0 #000;
+    }
+     .responsive-menu .slicknav_menu .slicknav_icon-bar {
+         background-color: #000;
+    }
+    /* new CSS */
+     .buy-ticket-featured-btns {
+         font-size: 20px;
+         height: 33px;
+         line-height: 30px;
+         margin: 10px 0;
+    }
+     .buy-ticket-featured-btns.terms-condition-btn {
+         font-size: 15px;
+         line-height: 14px;
+    }
+     .testinside-page-title h1, .route-to-kgd h1 {
+         font-size: 20px;
+    }
+     .test-inside-social-area h3 {
+         font-size: 18px;
+         text-align: center;
+    }
+     .single-test-inside-social-link {
+         padding-left: 0;
+    }
+     .icon-test-inside-sc {
+         position: relative;
+         width: 100%;
+         text-align: center;
+         margin-top: 10px;
+    }
+     .single-test-inside-social-link {
+         text-align: center;
+    }
+     .test-inside-page.page-development-notice {
+         margin-top: 100px;
+         margin-bottom: 50px;
+    }
+     .test-accordion-content h3 {
+         font-size: 17px;
+         margin: 0 0 15px;
+    }
+     .body-content-center.testinside-page-title h1::before, .body-content-center.testinside-page-title h1::after {
+         width: 5%;
+    }
+     .route-to-kgd.body-content-center h1::before, .route-to-kgd.body-content-center h1::after {
+         width: 11%;
+    }
+     .transport-map.body-content-center h1::before, .transport-map.body-content-center h1::after {
+         width: 22% !important;
+    }
+     .single-test-inside-block h1 {
+         font-size: 21px;
+    }
+     .margin-bottom-respon {
+         margin-bottom: 30px;
+    }
+     .buy-ticket-bottom-content h3 {
+         font-size: 20px;
+    }
+     .buy-ticket-bottom-content {
+         margin-bottom: 30px;
+    }
+     .home-test-mtch-banner-div {
+         height: 61px;
+    }
+     .home-test-mtch-banner-div h1 {
+         font-size: 16px;
+    }
+     .home-text-mtch-distble {
+         height: 61px;
+    }
+     .feedback-button {
+         height: 78px;
+    }
+     .feedback-button h1 {
+         padding: 12px 20px;
+         font-size: 18px;
+         line-height: 18px;
+    }
+    /* New CSS Jun 18*/
+     .single-fs-banner-btm-block {
+         height: 71px;
+         width: 100%;
+         margin-bottom: 15px;
+    }
+     .festival-banner-bottom-botton {
+         display: block;
+    }
+     .single-fs-banner-btm-block h1 {
+         font-size: 22px;
+         line-height: 18px;
+    }
+     .fst-cntnt-img img {
+         width: 100%;
+         margin-bottom: 30px;
+    }
+     .fst-page-sticker-right p {
+         font-size: 20px;
+         padding-bottom: 125px;
+         padding-right: 0;
+    }
+     .fst-page-sticker-left p {
+         font-size: 16px;
+         padding-top: 175px;
+         padding-right: 5px;
+    }
+     .fans-area.new-home-page-fans.fastival-main-block {
+         padding-bottom: 60px;
+    }
+     .body-content-center.fastival-dot-line h1::before, .body-content-center.fastival-dot-line h1::after {
+         width: 6%;
+         content: "";
+    }
+    /* Media Accreditation page*/
+     .body-content-center.media__accerediation--title h1 {
+         font-size: 25px;
+    }
+     .fst-bottom-absolute-img {
+         padding-top: 85px;
+    }
+     .form-control.media__accerediation--form-select {
+         width: 35%;
+         margin: auto;
+         margin-left: 15px;
+    }
+    /*New Festival Page*/
+     a.new-single-fs-banner-btm-block h1 {
+         width: 85%;
+         font-size: 23px;
+         line-height: 20px;
+         height: 40px;
+         left: 2px;
+    }
+     .fst-right-date-wrap {
+         width: 100%;
+         margin-bottom: 30px;
+    }
+     .fst-page-sticker-left p {
+         padding-top: 140px;
+    }
+     .fst-page-sticker-right p {
+         padding-bottom: 99px;
+         margin-top: 74px;
+    }
+     .fastival-mr-btm-35px {
+         margin-bottom: 0;
+    }
+     .interactive-map-wrapper .map img {
+         margin-top: 6px;
+    }
+     .map {
+         max-width: 250px;
+    }
+     .interactive-map-wrapper {
+         height: 200px;
+    }
+     .marker span {
+         font-size: 8px;
+    }
+     .fst-bottom-absolute-img.new-fst-bottom-absu-img {
+         padding-top: 80px;
+    }
+     .fans-area.new-home-page-fans.fastival-main-block.new-fst-pag-mblock {
+         padding-bottom: 0;
+    }
+     .fst-page-sticker-left {
+         padding-top: 37px;
+    }
+    /*Regulation Page*/
+     .single-regulation-content-block h1 {
+         font-size: 22px;
+    }
+     .single-regulation-content-block p span {
+         font-size: 18px;
+         line-height: 18px;
+    }
+     .single-regulation-content-block p, .single-regulation-content-block ul li {
+         font-size: 16px;
+         text-align: left;
+    }
+     .single-regulation-content-block {
+         text-align: left;
+    }
+    /* Accordiation Page */
+     .single-res-lrg-abs-text {
+         height: 92%;
+         font-size: 14px;
+         line-height: 17px;
+    }
+     h1.heading-dots-inc.accredition-title::after, h1.heading-dots-inc.accredition-title::before {
+         width: 30%;
+    }
+     .sigle-reserv-block.single-res-red-btn {
+         display: inline-block;
+    }
+     .sigle-reserv-block.single-res-arrow-left img {
+         top: 0;
+         position: relative;
+         margin: 25px 0;
+         transform: rotate(90deg);
+    }
+     .single-res-red-abs-text h2 {
+         width: 80%;
+         height: 50%;
+         font-size: 25px;
+    }
+     .reservation-place-wrap {
+         display: block;
+         text-align: center;
+    }
+     .media-rep-wrap h2 {
+         font-size: 28px;
+         margin: 30px 0;
+    }
+     a.res-btn h4 {
+         font-size: 14px;
+    }
+     .work-schedule-table table tr th {
+         font-size: 14px;
+         text-align: center;
+    }
+     .sigle-reserv-block.single-res-lrg-block img {
+         height: 230px;
+    }
+     h1.heading-dots-inc.accredition-title {
+         margin-top: 10px;
+    }
+     /* New Transport Page */
+     .single-transport-map-wrap h1 {
+        font-size: 23px;
+    }
+    .body-content-center.new-trans-title-dots h1::after, .body-content-center.new-trans-title-dots h1::before {
+        width: 5%;
+    }
+     a.new-trs-absolut-text h1 {
+        font-size: 23px;
+        line-height: 22px;
+    }
+    .new-transport-page-title {
+        width: 100%;
+        margin-top: 60px;
+        margin-bottom: 35px;
+    }
+     /* Acre Zone CSS */
+     .body-content-center.acre-zone-title-dots h1::after, .body-content-center.acre-zone-title-dots h1::before {
+        width: 3%;
+    }
+     .acre-zone-bottom-banner img {
+        margin-top: -35px;
+    }
+     img.ac-zn-lft-btm-img {
+        width: 100%;
+        max-height: 230px;
+    }
+     .acre-zone-left-content {
+        margin-bottom: 30px;
+    }
+    p.page-footer-text.acre-zone-footer-text {
+        margin-top: 40px;
+        margin-bottom: 60px;
+     }
+     .new-transport-page-title.acre-zn-page-tt {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+     h1.heading-dots-inc.transport-title.acre-zone-title-bn {
+        margin: 0 0 30px;
+    }
+      /* TP Chapters */
+    .tp-chp-btn-bottom-text {
+        margin-bottom: 30px;
+        padding: 10px;
+    }
+    .body-content-center.tp-chp-title-dots h1 {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    a.kgd-city-map-btn {
+        margin-top: 15px;
+        width: 150px;
+        font-size: 15px;
+        float: none;
+        height: 57px;
+        margin: 15px auto;
+        display: block;
+    }
+    .kgd-city-map-btn span {
+      width: 94% !important;
+    }
+     .tp-kgd-content-mdl-btn h1 {
+        font-size: 18px;
+        top: 17px;
+        width: 85%;
+    }
+     .body-content-center.tp-chp-title-dots h1::after, .body-content-center.tp-chp-title-dots h1::before {
+        width: 8%;
+    }
+    .tp-kgd-content-mdl-btn {
+        width: 100%;
+        height: 84px;
+    }
+     .body-content-center.tp-chp-title-dots.tp-red-title h1::after, .body-content-center.tp-chp-title-dots.tp-red-title h1::before {
+        width: 19%;
+    } 
+     .body-content-center.tp-chp-title-dots.tp-red-title h1 span {
+        font-size: 16px;
+        
+    }
+     .kgd-city-map-content ul {
+        padding: 0;
+        padding-left: 15px;
+    }
+     
+     /* Transport Pad Cyc CSS */
+     a.new-trs-absolut-text.trns-pad-cyc-txt h1 {
+        font-size: 18px;
+        line-height: 19px;
+    }
+     a.new-trs-absolut-text.trns-pad-cyc-txt {
+        top: 15px;
+        width: 90%;
+    }
+     .single-trns-pad-cyc-right-title {
+        position: absolute;
+        width: 100%;
+        bottom: -78px;
+        left: 15px;
+    }
+     .trans-pad-cyc-img {
+        padding-top: 50px;
+    }
+    .single-trns-pad-cyc-right-title h1::before {
+        width: 95%;
+        left: 0 !important;
+        margin: 0 !important;
+    }
+     .single-trns-pad-cyc-left-content {
+        width: 100%;
+    }
+     .row.trans-pad-cyc-content {
+	margin-right: 0 !important;
+}
+     /* Fees Page CSS */
+     .fans-area.body-content-center.fees-area-wrap h1::after, .fans-area.body-content-center.fees-area-wrap h1::before {
+        content: "";
+        width: 29%;
+    }
+      .bus-bottom-content.body-content-center h1::after, .bus-bottom-content.body-content-center h1::before {
+        width: 22%;
+    }
+     img.bus-page-left-img {
+        width: 100%;
+        height: auto;
+    }
+     a.new-trs-absolut-text.bus-page-title h1 {
+        font-size: 22px;
+    }
+     a.new-trs-absolut-text.bus-page-title {
+        top: 23px;
+    }
+     p.page-footer-text.bus-footer-text {
+        margin-top: 90px;
+    }
+    .bus-btm-left-content {
+        margin-bottom: 30px;
+    }
+     .new-single-fs-banner-btm-block img {
+        width: 100%;
+    }
+     
+     /* Festival Page cSS */
+    .new-single-fs-banner-btm-block {
+        height: 71px;
+        width: 100%;
+    }
+    .dis-table {
+        height: 71px;
+        width: 80%;
+        margin: auto;
+    }
+     .fst-page-sticker-left.new-fast-page-st-left p {
+        padding-top: 128px;
+    }
+     .fst-page-sticker-right.new-fst-page-sticker-right {
+        text-align: left;
+    }
+     /* Mapp Page CSS */
+     .mapp-area-title img {
+        width: 100%;
+    }
+    .mapp-title-text {
+        font-size: 20px !important;
+        width: 85% !important;
+        left: 0px !important;
+        top: 17px !important;
+        margin: auto !important;
+        bottom: 0 !important;
+    }
+     .mapp-area-left {
+        margin-bottom: 60px !important;
+        padding-left: 0;
+    }
+     .mapp-left-content {
+        padding-left: 0;
+    }
+     .mapp-left-content.mapp-content-right {
+        padding-left: 0;
+    }
+     .mapp-left-content h2 {
+        font-size: 20px;
+    }
+     .mapp-left-content h4 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+     .mapp-bottom-red-text {
+	font-size: 20px;
+	padding: 30px 0;;
+}
+        /* New Home page CSS */
+     .nw-hm-bn-btm-tt-abs {
+        top: 4px;
+    }
+     .nw-hm-bn-btm-tt-abs h1 {
+        font-size: 13px;
+    }
+     .nw-hm-bn-btm-tt-abs.nw-tt-blue-tt {
+        top: 11px;
+    }
+     .nw-hm-bn-btm-tt-abs.nw-tt-blue-tt h1 {
+        font-size: 14px;
+    }
+     .nw-home-banner-btm-title {
+        margin: 10px 0;
+    }
+     .nw-home-banner-btm-title.nw-hm-blu-tt {
+        margin-bottom: 30px;
+    }
+     
+     /* Map Image CSS */
+     img.xzoom.zoom-large-img {
+        width: 100% !important;
+    }
+     .xzoom-thumbs.map-zoom-small-img a {
+        margin-right: 8px;
+        width: 48%;
+    }
+     .xzoom-thumbs.map-zoom-small-img img {
+        width: 100% !important;
+    }
+     .bus-content-block {
+        display: block;
+    }
+
+     
+
+}
+/* Wide Mobile Layout: 480px. */
+ @media only screen and (min-width: 480px) and (max-width: 767px) {
+    /* New CSS */
+     .home-test-mtch-banner-div {
+         height: 120px;
+    }
+     .home-text-mtch-distble {
+         height: 120px;
+    }
+     .home-test-mtch-banner-div h1 {
+         font-size: 28px;
+    }
+     .feedback-button {
+         height: 142px;
+    }
+     .feedback-button h1 {
+         padding: 28px 63px;
+         font-size: 22px;
+         line-height: 22px;
+    }
+    /* New CSS Jun 18*/
+     .single-fs-banner-btm-block {
+         height: 82px;
+         width: 45%;
+         margin-bottom: 15px;
+         float: left;
+         margin-left: 32px;
+    }
+     .fst-bottom-absolute-img {
+         padding-top: 120px;
+    }
+     .interactive-map-wrapper {
+         height: 267px;
+    }
+     .map {
+         max-width: 340px;
+    }
+     .single-res-lrg-abs-text {
+         height: 80%;
+         font-size: 16px;
+         line-height: 22px;
+    }
+     .sigle-reserv-block.single-res-lrg-block img {
+         height: 180px;
+    }
+     .nw-hm-bn-btm-tt-abs h1 {
+        font-size: 20px;
+    }
+     .nw-hm-bn-btm-tt-abs {
+        top: 15px;
+    }
+     .nw-hm-bn-btm-tt-abs.nw-tt-blue-tt h1 {
+        font-size: 22px;
+    }
+     .nw-hm-bn-btm-tt-abs.nw-tt-blue-tt {
+        top: 24px;
+    }
+     
+     
+     
+     
+     
+}
+ 

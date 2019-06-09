@@ -1,0 +1,1893 @@
+/*
+====================================================================================================================
+
+                                                Table Content:
+
+====================================================================================================================
+
+
+1. fonts
+
+2. Base CSS
+
+3. Commom CSS 
+
+4. Background Image CSS
+
+5. Home Page CSS  
+
+    5.1 - Header Top CSS
+
+    5.2 - Header Area CSS
+
+    5.3 - Header Bottom CSS
+
+    5.4 - News Area CSS
+
+    5.5 - Organizer Area CSS
+
+    5.6 - Organizer Bottom Area CSS
+
+    5.7 - Footer Area CSS
+
+6. Ambassadors Page CSS
+
+7. Page-Development Page CSS
+
+8. Transport Page CSS
+
+9. Fans Fastival Page CSS
+
+10. Stadium Page CSS
+
+11. About Kaliningrad Page CSS
+
+12. Single News Page CSS
+
+13. News Homepage Page CSS
+
+14. Contact Page CSS
+
+15. FanID Page CSS
+
+16. Documention Page CSS
+
+17. History Page CSS
+
+18. Ticket Page CSS
+
+*/
+
+
+/*
+==================================
+1. Fonts
+==================================
+*/
+
+/* Dusha Plus Font */
+
+@font-face {
+    font-family: 'DushaPlus-Regular';
+    src: url('../fonts/DushaPlus-Regular.eot');
+    src: url('../fonts/SFUIDisplay-Medium.woff2') format('woff2'), url('../fonts/DushaPlus-Regular.woff') format('woff'), url('../fonts/DushaPlus-Regular.ttf') format('truetype'), url('../fonts/DushaPlus-Regular.svg#SFUIDisplay-Medium') format('svg'), url('../fonts/DushaPlus-Regular.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Whitney Book Font */
+@font-face {
+    font-family: 'Whitney-Book';
+    src: url('../fonts/Whitney-Book.eot');
+    src: url('../fonts/Whitney-Book.woff2') format('woff2'), url('../fonts/Whitney-Book.woff') format('woff'), url('../fonts/Whitney-Book.ttf') format('truetype'), url('../fonts/Whitney-Book.svg#SFUIDisplay-Medium') format('svg'), url('../fonts/Whitney-Book.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Whitney Semibold Font */
+@font-face {
+    font-family: 'Whitney-Semibold';
+    src: url('../fonts/Whitney-Semibold.eot');
+    src: url('../fonts/Whitney-Semibold.woff2') format('woff2'), url('../fonts/Whitney-Semibold.woff') format('woff'), url('../fonts/Whitney-Semibold.ttf') format('truetype'), url('../fonts/Whitney-Semibold.svg#SFUIDisplay-Medium') format('svg'), url('../fonts/Whitney-Semibold.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Whitney Medium Font */
+@font-face {
+    font-family: 'Whitney-Medium';
+    src: url('../fonts/Whitney-Medium.eot');
+    src: url('../fonts/Whitney-Medium.woff2') format('woff2'), url('../fonts/Whitney-Medium.woff') format('woff'), url('../fonts/Whitney-Medium.ttf') format('truetype'), url('../fonts/Whitney-Medium.svg#SFUIDisplay-Medium') format('svg'), url('../fonts/Whitney-Medium.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/*
+==================================
+2. Base CSS 
+==================================
+*/
+
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus {
+    outline: 0 solid
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-family: 'DushaPlus-Regular', sans-serif;
+}
+h1 {
+    font-size: 36px;
+}
+h3 {
+    font-size: 24px;
+}
+body {
+    font-family: 'Whitney-book', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+a:hover {
+    text-decoration: none
+}
+
+/*
+==================================
+3. Common CSS 
+==================================
+*/
+.line-height-20px{
+    line-height: 20px;
+}
+.news-cotent,
+.footer-left-text,
+.footer-wid-link li a {
+    font-family: 'Whitney-Medium';
+}
+.fans-left-heading .text-right a {
+    font-family: 'Whitney-Book', sans-serif;
+}
+
+.quick-link-home {
+    color: #000;
+}
+.responsive-menu .slicknav_menu {
+    display: none;
+}
+.headaer-right.other-pages-header-right {
+    margin-top: 35px;
+}
+.font-family-whitneybook {
+    font-family: 'Whitney-Book', sans-serif;
+}
+
+a.decotaion-true {
+    text-decoration: underline;
+}
+p.text-align-center {
+    text-align: center;
+}
+.body-content-center h1 {
+    position: relative;
+    font-size: 36px;
+}
+.body-content-center h1::before {
+    background-image: url(../img/heading-bg-after.png);
+    content: "";
+    width: 30%;
+    height: 19px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    bottom: 0;
+    margin: auto;
+}
+.body-content-center h1::after {
+    background-image: url(../img/heading-bg-after.png);
+    content: "";
+    width: 30%;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: 3px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    bottom: 0;
+    margin: auto;
+}
+.body-content-center.long-dots-line h1::after {
+	width: 38%;
+}
+.body-content-center.long-dots-line h1::before {
+    width: 38%;
+}
+.heading-dots-inc {
+    text-align: center;
+    margin: 0 0 40px;
+    position: relative;
+}
+.single-title-small-dots h1 {
+    position: relative;
+}
+.single-title-small-dots h1::before {
+    background-image: url(../img/small-heading-dots.png);
+    content: "";
+    width: 35%;
+    height: 19px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    bottom: 0;
+    margin: auto;
+}
+.single-title-small-dots h1::after {
+    background-image: url(../img/small-heading-dots.png);
+    content: "";
+    width: 35%;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: 3px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    bottom: 0;
+    margin: auto;
+}
+.single-title-small-dots {
+    text-align: center;
+    margin: 0 0 30px;
+}
+.body-content-center b,.body-content-center strong, .contact-details b, .history-bottom-content b, .about-kaliningrad-cotent b, .modal-window-heading p, .tickets-body-content b {
+    font-family: 'Whitney-Medium', sans-serif;
+}
+
+/*
+==================================
+4. Background Image CSS
+==================================
+*/
+
+
+.banner-time {
+    background-image: url(../img/banner-icon.png);
+}
+.header-area {
+    background-image: url(../img/header-banner-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+}
+
+/* Fans Gallery Images Background */
+
+.fans-img-bg {
+    background-image: url(../img/Transport.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+}
+.fans-img-bg-2 {
+    background-image: url(../img/2905907_full-lnd.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+}
+.fans-img-bg-3 {
+    background-image: url(../img/fanid.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+}
+.fans-img-bg-4 {
+    background-image: url(../img/FIFA_Kaliningrad3.01.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+}
+.fans-right-list {
+    background-image: url(../img/header-bottom-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Organizer Area Images Background */
+.organizer-area {
+    background-image: url(../img/organizer-body-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+}
+.organizer-bg-img {
+    background-image: url(../img/organizer-bg-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+}
+.organizer-bg-img-2 {
+    background-image: url(../img/organizer-bg-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+}
+.organizer-bg-img-3 {
+    background-image: url(../img/organizer-bg-3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+}
+.organizer-bg-img-4 {
+    background-image: url(../img/organizer-bg-4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+}
+
+/* Organizer Bottom Area Images Background */
+.title-bg {
+    background-image: url(../img/organizer-bottom-bg.png);
+}
+.title-bg2 {
+    background-image: url(../img/organizer-bottom-bg-2.png);
+}
+.title-bg3 {
+    background-image: url(../img/organizer-bottom-bg3.png);
+}
+
+/* Footer Area Images Background */
+.footer-area {
+    background-image: url(../img/footer-bg.png);
+    background-size: cover;
+    background-position: bottom center;
+    background-color: #ddd;
+}
+/*
+==================================
+5. Home Page CSS
+==================================
+*/
+
+/*
+==================================
+5.1 - Header Top CSS
+==================================
+*/
+
+.header-top {
+    padding-top: 25px;
+}
+.nav-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav-menu li {
+    display: inline;
+}
+.headaer-right {
+    text-align: right;
+}
+.nav-menu li a {
+    padding: 5px 35px;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    font-family: 'Whitney-Medium', sans-serif;
+}
+.nav-menu li a:hover {
+    text-decoration: underline;
+    color: #00498b;
+}
+.telephone i.fa {
+    background: #00498b;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.telephone {
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: block;
+    margin-right: 15px;
+}
+.telephone span {
+    font-weight: 400;
+    font-size: 14px;
+}
+.headaer-right .dropdown .btn-default i.fa {
+    margin-right: 10px;
+}
+.headaer-right .dropdown .btn-default {
+    border: none;
+    color: #025da3;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0 !important;
+    z-index: 1000;
+    display: none;
+    float: right !important;
+    min-width: 92px;
+    padding: 5px 0;
+    margin: 8px 0 0;
+    font-size: 14px;
+    text-align: right !important;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+.dropdown-menu img {
+    width: 30px;
+    margin-right: 15px;
+}
+.dropdown-menu > li > a {
+    display: block;
+    padding: 3px 14px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #025da3;
+    white-space: nowrap;
+}
+.dropdown-menu > li > a:hover {
+    color: #025da3;
+    text-decoration: underline;
+}
+.btn-default:hover {
+    color: #333;
+    background-color: transparent;
+    border-color: #adadad;
+}
+.nav-menu li.dropdown .btn,
+.btn-large {
+    background: transparent;
+    -webkit-box-shadow: 0 0 0 0;
+    box-shadow: 0 0 0 0;
+}
+
+/*
+==================================
+5.2 - Header Area CSS
+==================================
+*/
+.header-area .row {
+  position: relative;
+    height: 290px;
+}
+.header-banner-img {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	max-width: 100%;
+	height: auto;
+}
+.header-area {
+    height: 290px;
+    margin-top: -10px;
+}
+.header-banner-content {
+    text-align: right;
+    color: #fff;
+    font-size: 26px;
+    margin-top: 34px;
+}
+.header-banner-content h2 {
+    font-size: 26px;
+}
+.banner-time {
+    background-position: center;
+    height: 127px;
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 125px;
+    position: relative;
+    font-family: 'Whitney-Book', sans-serif;
+}
+.banner-time h1 {
+	color: #fff;
+	margin: 3px 0;
+	margin-top: 24px;
+	font-family: 'DushaPlus-Regular', sans-serif;
+	font-size: 43px;
+	margin-bottom: -5px;
+}
+.banner-time h1 span {
+    font-size: 18px;
+    display: block;
+}
+.banner-time {
+	text-align: center;
+	font-size: 18px;
+}
+
+/*
+==================================
+5.3 - Header Bottom CSS
+==================================
+*/
+
+.fans-left-heading .text-right a {
+    margin: x;
+    padding: 17px 0;
+    display: block;
+    text-decoration: underline;
+}
+.fans-area {
+    padding: 40px 0;
+}
+.fans-left-heading {
+    margin-bottom: 20px;
+}
+.fans-img {
+    height: 205px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+.fans-img:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+    opacity: .4;
+}
+.hover-content {
+	color: #fff;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+.hover-content-table-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+.hover-content h3 {
+    position: relative;
+    padding-bottom: 15px;
+    font-family: 'Whitney-Semibold', sans-serif;
+}
+.hover-content h3::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 75px;
+    content: "";
+    right: 0;
+    margin: auto;
+    background-image: url(../img/heading-bottom.png);
+    background-position: center;
+    height: 8px;
+    background-size: cover;
+}
+.fans-right-content {
+    text-align: center;
+}
+.fans-right-content h1 {
+	margin: 0 0 38px;
+}
+.fans-right-list {
+	height: 96px;
+	display: inline-block;
+	width: 401px;
+	margin-bottom: 15px;
+	background-repeat: no-repeat;
+	text-align: right;
+}
+.fans-right-list h4 img {
+	width: 34px;
+	height: auto;
+	margin: 2px;
+}
+.fans-right-list h4 {
+    color: #fff;
+    font-weight: 400;
+    padding: 26px 38px;
+    font-family: 'Whitney-Medium', sans-serif;
+    font-size: 22px;
+}
+.fans-right-list h4 span {
+    display: block;
+    font-weight: 700;
+    font-family: 'Whitney-Semibold', sans-serif;
+}
+
+/*
+==================================
+5.4 - News Area CSS
+==================================
+*/
+
+.news-area {
+    padding-bottom: 45px;
+}
+.news-cotent p {
+	margin-top: 0;
+	max-height: 120px;
+	overflow: hidden;
+}
+.news-cotent {
+    color: #000;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    font-family: 'Whitney-Book', sans-serif;
+}
+.news-cotent:hover {
+    color: #0064a8;
+    text-decoration: underline;
+}
+.news-block-img img, .news-block-img {
+	position: relative;
+	width: 100px;
+	height: 108px;
+	overflow: hidden;
+	text-align: center;
+	margin: auto;
+}
+.news-img-border img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 138px;
+	width: 100%;
+	z-index: 2;
+}
+.news-img-border {
+	height: 108px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.home-news-bg-2{
+    
+	background-image: url(../img/main-news-img.jpg);
+}
+.home-news-bg-3{
+    
+	background-image: url(../img/news-img.png);
+}
+
+/*
+==================================
+5.5 - Organizer Area CSS
+==================================
+*/
+
+.organizer-area {
+    padding: 70px 0;
+}
+.organizer-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.organizer-single-block {
+    height: 205px;
+    position: relative;
+    display: block;
+}
+.organizer-overlay-content {
+	color: #fff;
+	text-align: center;
+	display: table;
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+.oranizer-title-table-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+.organizer-overlay-content h3 {
+    position: relative;
+    padding-bottom: 15px;
+    font-family: 'Whitney-Semibold', sans-serif;
+}
+.organizer-overlay-content h3::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 75px;
+    content: "";
+    right: 0;
+    margin: auto;
+    background-image: url(../img/heading-bottom.png);
+    background-position: center;
+    height: 8px;
+    background-size: cover;
+}
+
+/*
+==================================
+5.6 - Organizer Bottom Area CSS
+==================================
+*/
+
+.title-bg {
+    height: 104px;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+    background-size: contain;
+    background-position: center;
+}
+.oranizer-bottom-area {
+    padding: 70px 0;
+}
+.single-organizer-bottom-block p {
+    padding: 0 17px;
+}
+.single-organizer-bottom-block {
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Whitney-Semibold', sans-serif;
+}
+
+/*
+==================================
+5.7 - Footer Area CSS
+==================================
+*/
+
+.footer-area .row {
+    position: relative;
+}
+.single-footer-wid,
+.single-footer-wid a {
+    color: #828282;
+}
+.single-footer-wid {
+    margin-top: 40px;
+}
+.footer-wid-link {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer-wid-link li a {
+    font-weight: ;
+    padding: 5px 0;
+    display: block;
+}
+.footer-top-area {
+    padding-bottom: 40px;
+    position: relative;
+    padding-top: 40px;
+}
+.footer-top-dots {
+    position: relative;
+}
+.footer-top-dots::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../img/footer-top-dots.png);
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.single-footer-wid h4 {
+    font-family: 'Whitney-Semibold', sans-serif;
+}
+.footer-area {
+    color: #fff;
+}
+.footer-social-link {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer-social-link li {
+    display: inline-block;
+}
+.footer-social-link li a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.footer-social-link li a.facebook-icon,
+.footer-social-link li a.vk-icon,
+.footer-social-link li a.instragam-icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.footer-social-link li a.instragam-icon {
+    background-image: url(../img/instragam-icon.png);
+}
+.footer-social-link li a.facebook-icon {
+    background-image: url(../img/facebook-icon.png);
+}
+.footer-social-link li a.vk-icon {
+    background-image: url(../img/vk-icon.png);
+}
+.footer-area {
+    position: relative;
+}
+.footer-cartoon {
+    position: absolute;
+    right: 0;
+    top: -193px;
+}
+.footer-left-text {
+    padding: 57px 0;
+}
+.footer-left-text a {
+	color: #fff;
+}
+
+/*
+==================================
+6. Ambassadors Page CSS
+==================================
+*/
+
+.ambassarod-name h1 {
+    color: #000;
+}
+.page-quick-link {
+    font-family: 'Whitney-Medium', sans-serif;
+    padding: 25px 0;
+}
+.single-ambassador-block {
+    text-align: center;
+    display: block;
+}
+.ambassadors-block {
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+.single-ambassador-block img {
+    margin-bottom: 20px;
+}
+.ambassador-person-img {
+    text-align: center;
+}
+.ambassador-person-img img {
+    margin-bottom: 20px;
+}
+.ambassador-person-details {
+    text-align: justify;
+    padding: 50px;
+    padding-top: 0;
+    font-family: 'Whitney-Book', sans-serif;
+}
+.ambassador-person-details h1 {
+    margin: 0 0 30px;
+    position: relative;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.ambassador-person-details h1::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 88px;
+    content: "";
+    right: 0;
+    margin: auto;
+    background-image: url(../img/amba-name-bottom.png);
+    background-position: center;
+    height: 8px;
+    background-size: cover;
+}
+.modal-dialog {
+    width: 800px;
+    margin: 30px auto;
+}
+.close {
+    opacity: .7 !important;
+}
+
+/*
+==================================
+7. Page-Development Page CSS
+==================================
+*/
+
+.mainpage-block.page-development-area {
+    padding: 280px 0;
+}
+.page-development-notice {
+    text-align: center;
+    font-family: 'Whitney-Medium', sans-serif;
+}
+.page-development-notice img {
+    margin-bottom: 30px;
+}
+.page-development-notice a {
+    text-align: ;
+    text-decoration: underline;
+}
+
+/*
+==================================
+8. Transport Page CSS
+==================================
+*/
+
+.page-footer-text {
+    text-align: center;
+    margin: 30px 0;
+}
+.tranport-content {
+    font-family: 'Whitney-Book', sans-serif;
+}
+.heading-dots-inc.transport-title {
+    margin: 0 0 20px;
+}
+
+/*
+==================================
+9. Fans Fastival Page CSS
+==================================
+*/
+.fan-fastival-img {
+	margin-bottom: 30px;
+}
+.google-maps {
+    padding: 30px 0;
+}
+
+/*
+==================================
+10. Stadium Page CSS
+==================================
+*/
+
+.single-slider-bg {
+    background-image: url(../img/single-stadium-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.single-slider-bg-2 {
+    background-image: url(../img/signle-stadium-bg-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.single-slider-bg-3 {
+    background-image: url(../img/signle-stadium-bg-3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.single-slider-bg-4 {
+    background-image: url(../img/signle-stadium-bg-4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.single-slider-bg-5 {
+    background-image: url(../img/signle-stadium-bg-5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.template-pages-banner-img {
+    margin-bottom: 30px;
+}
+.single-slider {
+    height: 200px;
+    border: 4px solid #beb28a;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+.single-slider:hover {
+    border-color: #0064a8;
+}
+.maps-top-dots {
+    position: relative;
+}
+.maps-top-dots::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../img/footer-top-dots.png);
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.video-frame-area {
+    margin-bottom: 40px;
+}
+.stadium-slider {
+    position: relative;
+}
+.stadium-slider .owl-controls .owl-nav div {
+    position: absolute;
+    left: -60px;
+    top: 0;
+    height: 50px;
+    margin: auto;
+    bottom: 0;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+}
+.stadium-slider .owl-controls .owl-nav .owl-next {
+    left: auto;
+    right: -60px;
+}
+
+/*
+==================================
+11. About Kaliningrad Page CSS
+==================================
+*/
+
+
+.about-kaliningrad-bottom-img-bg1 {
+    background-image: url(../img/more.jpg);
+}
+.about-kaliningrad-bottom-img-bg2 {
+    background-image: url(../img/Dune.jpg);
+}
+.about-kaliningrad-bottom-img-bg3 {
+    background-image: url(../img/amber.jpg);
+}
+.about-kaliningrad-bottom-img {
+    height: 160px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+}
+.about-kaliningrad-large-img {
+    margin-bottom: 50px;
+}
+.about-kaliningrad-right-img img {
+    margin-bottom: 30px;
+}
+.about-kaliningrad-cotent {
+    text-align: justify;
+    font-family: 'Whitney-Book', sans-serif;
+}
+
+/*
+==================================
+12. Single News Page CSS
+==================================
+*/
+
+.news-date {
+    color: #beb28a;
+    font-size: 14px;
+}
+.single-news-page-left-img img {
+	border: 5px solid #beb28a;
+}
+.single-news-page-left-img p {
+    color: #000;
+    margin-top: 10px;
+}
+.single-news-pages-content-right p {
+	text-align: justify;
+}
+.single-news-tags {
+    background-image: url(../img/single-news-tags-bg.png);
+    color: #fff;
+    display: inline-block;
+    padding: 5px 15px;
+    margin-right: 5px;
+    border-radius: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-width: 208px;
+    text-align: center;
+    margin-top: 20px;
+}
+.sigle-news-social-links {
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+}
+.sigle-news-social-links li {
+    display: inline-block;
+}
+.sigle-news-social-links li a i.fa {
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    background: #3b579d;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+.sigle-news-social-links li a i.fa-vk {
+    background: #4d75a2;
+}
+.decotaion-true.single-news-page-slider-bottom-text {
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.single-news-page-imgs-window .modal-dialog {
+    width: 720px;
+}
+.single-news-page-imgs-window .carousel-inner > .item > a > img,
+.carousel-inner > .item > img,
+.img-responsive,
+.thumbnail a > img,
+.thumbnail > img {
+    display: block;
+    height: auto;
+    width: 720px;
+}
+.single-news-page-imgs-window .carousel-caption {
+    right: 0;
+    left: 0%;
+    padding-bottom: 30px;
+}
+.single-news-page-imgs-window .carousel-caption {
+    position: relative;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: #000;
+    text-align: center;
+    text-shadow: 0 0 0;
+}
+.single-news-page-imgs-window .carousel-control.right,
+.single-news-page-imgs-window .carousel-control.left {
+    background-color: #000;
+}
+.single-news-page-imgs-window .carousel-control.left:hover,
+.single-news-page-imgs-window .carousel-control.right:hover {
+    opacity: .5;
+}
+.single-news-slider-icon-left,
+.single-news-slider-icon-right {
+    position: absolute;
+    top: 0;
+    bottom: 42px;
+    width: 45px;
+    height: 30px;
+    margin: auto;
+    right: 0;
+    left: 0;
+}
+.single-news-page-imgs-window .carousel-control {
+    position: absolute;
+    bottom: 139px;
+}
+
+/*
+==================================
+13. News Homepage Page CSS
+==================================
+*/
+
+.news-homepage-filtermenu {
+    margin-bottom: 25px;
+}
+.news-homepage-filtermenu li {
+    display: inline-block;
+    list-style: none;
+    cursor: pointer;
+    background-image: url(../img/single-news-tags-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-width: 150px;
+    text-align: center;
+    color: #fff;
+    min-height: 24px;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    font-size: 14px;
+    line-height: 22px;
+}
+.news-homepage-filtermenu li.active {
+    background-image: url(../img/news-home-menu-bg.png);
+}
+.news-homepage-filtermenu li:hover {
+    background-image: url(../img/news-home-menu-bg.png);
+}
+.single-news-homepage-item img {
+	border: 5px solid #beb28a;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+	margin-bottom: 15px;
+}
+.single-news-homepage-item {
+    color: #000;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    font-family: 'Whitney-Medium', sans-serif;
+    min-height: 325px;
+    display: block;
+}
+.single-news-homepage-item:hover {
+    color: #0064a8;
+    text-decoration: underline;
+}
+.single-news-homepage-item:hover img {
+    border-color: #0064a8;
+}
+.news-homepage-itms .single-news-tags {
+    min-width: 130px;
+    height: 20px;
+    font-size: 13px;
+    padding: 0px;
+    margin-top: 0px;
+    line-height: 18px;
+}
+.margin-bottom-class {
+    margin-bottom: 45px;
+}
+.template-pagination ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.template-pagination li {
+    display: inline-block;
+}
+.template-pagination li.active {
+    background-image: url(../img/pagination-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+    min-width: 35px;
+    min-height: 35px;
+    line-height: 31px;
+}
+.template-pagination li.active > a {
+    color: #fff;
+}
+.template-pagination li a {
+    padding: 0 13px;
+    font-family: 'Whitney-Medium', sans-serif;
+    color: #838383;
+}
+.template-pagination {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+/*
+==================================
+14. Contact Page CSS
+==================================
+*/
+
+.contact-title {
+    margin: 0 0 30px;
+    line-height: 27px;
+}
+.contact-details {
+	min-height: 360px;
+}
+.contact-details.contact-details-right {
+	margin-top: 55px;
+	line-height: 24px;
+}
+
+/*
+==================================
+15. FanID Page CSS
+==================================
+*/
+.fanid-left-img {
+	width: 67%;
+}
+.kaliningrad-center-maps .google-maps {
+    width: 100%;
+}
+.kaliningrad-center-list-title {
+    text-align: center;
+    margin: 30px 0;
+}
+.kaliningrad-center-list-title h1 {
+	margin: 0 0 15px;
+}
+.Kaliningrad-center-lists .nav li.active > a {
+    background-image: url(../img/news-home-menu-bg.png);
+    color: #fff;
+}
+.Kaliningrad-center-lists .nav li:hover > a {
+    background-image: url(../img/news-home-menu-bg.png);
+    color: #fff;
+}
+.Kaliningrad-center-lists .nav {
+    text-align: center;
+}
+.Kaliningrad-center-lists .nav li > a {
+    list-style: none;
+    display: inline-block;
+    min-width: 200px;
+    text-align: center;
+    min-height: 25px;
+    line-height: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.Kaliningrad-center-lists .nav li a {
+    color: #025ea3;
+    text-decoration: underline;
+    cursor: pointer;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+.Kaliningrad-center-lists .nav-tabs {
+    border-bottom: 0;
+}
+.Kaliningrad-center-lists .nav > li > a {
+    padding: 3px;
+}
+.Kaliningrad-center-lists .nav-tabs > li {
+    margin-bottom: -1px;
+    display: inline-block;
+    float: none;
+}
+.Kaliningrad-center-lists .nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+    border: 0px solid #ddd;
+    cursor: pointer;
+    font-family: 'Whitney-Medium', sans-serif;
+}
+
+/*
+==================================
+16. Documention Page CSS
+==================================
+*/
+
+.docuemention-block h1 {
+    margin: 0 0 30px;
+}
+.docuemention-block > p {
+    margin-bottom: 30px;
+}
+.documention-item-list {
+    color: #221e1f;
+}
+.documention-item-list img {
+    width: 100%;
+}
+.documention-item-list:hover {
+    color: #221e1f;
+}
+.single-documention-block {
+    margin: 30px 0;
+}
+.modal-window-heading p {
+    text-align: center;
+    font-weight: 700;
+    margin: auto;
+    padding: 0 110px;
+}
+.bottom-icon {
+    background-image: url(../img/amba-name-bottom.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 10px;
+    margin: 40px auto;
+    margin-bottom: 0;
+}
+.documention-window-body-content {
+    padding: 50px;
+}
+.model-document-icon-left {
+    width: 6%;
+    float: left;
+}
+.model-documnent-name {
+    float: right;
+    width: 90%;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+.model-window-document-list {
+    margin: 35px 0;
+    padding-bottom: 30px;
+    margin-bottom: 65px;
+}
+.model-documnent-name a {
+    color: #221e1f;
+}
+.model-documnent-name a:hover {
+    color: #0064a8;
+    text-decoration: underline;
+}
+.document-main-bottom-block {
+    padding-bottom: 40px;
+}
+
+/*
+==================================
+17. History Page CSS
+==================================
+*/
+
+.body-content-center.history-page-title h1::after {
+    width: 23%;
+}
+.body-content-center.history-page-title h1::before {
+    width: 23%;
+}
+.history-bottom-content,
+.history-content-top {
+    text-align: justify;
+}
+.history-img-right {
+    margin-top: 52%;
+}
+.history-bottom-imgs li {
+    list-style: none;
+    display: inline-block;
+}
+.history-bottom-imgs li img {
+    margin-right: 30px;
+    border: 5px solid #beb28a;
+    width: 267px;
+    height: 197px;
+}
+.history-bottom-imgs {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+/*
+==================================
+18. Ticket Page CSS
+==================================
+*/
+
+..tickets-body-content {
+    line-height: 20px;
+}
+.tickets-body-content img {
+    width: 60%;
+    margin: 30px auto;
+}
+.tickets-page-body-img {
+    text-align: center;
+}
+.bottom-icon.ticket-margin-bottom {
+    margin-bottom: 30px;
+}
+
+
+
+/* Home Test Match */
+.font-family-whitneyMedium{
+    font-family: 'Whitney-Medium';
+}
+ .home-test-mtch-banner-div {
+     background-image: url(../img/home-test-banner.png);
+     background-position: center;
+     background-size: cover;
+     height: 265px;
+     display: block;
+     font-family: 'DushaPlus-Regular';
+     margin: 45px 0;
+}
+ .home-text-mtch-distble {
+     height: 265px;
+     display: table;
+     text-align: center;
+     width: 100%;
+}
+ .home-text-mtch-distble-cell {
+     display: table-cell;
+     vertical-align: middle;
+}
+ .home-test-mtch-banner-div h1 {
+     color: #fff;
+     font-size: 66.93px;
+}
+/* Buy Ticket Page CSS */
+ .buy-ticket-bottom-content h3 {
+     margin: 0 0 20px;
+     font-size: 22px;
+     min-height: 49px;
+}
+ .buy-ticket-bottom-content p {
+     margin-bottom: 0;
+}
+ .buy-ticket-featured-img img {
+     margin-bottom: 35px;
+}
+/* Test Inside Page CSS */
+ .buy-ticket-featured-btns{
+     background-image: url(../img/buy-ticket-button.png);
+     background-size: cover;
+     background-position: center;
+}
+ .buy-ticket-featured-btns.terms-condition-btn{
+     background-image: url(../img/terms-con-btn.png);
+}
+ .test-inside-featured-img img {
+     margin-top: 40px;
+     margin-bottom: 30px;
+}
+ .buy-ticket-featured-btns {
+     color: #fff;
+     font-size: 42px;
+     height: 71px;
+     display: block;
+     text-align: center;
+     line-height: 65px;
+     font-family: 'DushaPlus-Regular';
+     -webkit-transition: .2s;
+     -o-transition: .2s;
+     transition: .2s;
+}
+ .buy-ticket-featured-btns:hover {
+     color: #c2b690;
+}
+ .buy-ticket-featured-btns.terms-condition-btn {
+     font-size: 30px;
+     line-height: 30px;
+}
+ .body-content-center.testinside-page-title {
+     margin-top: 40px;
+}
+ .body-content-center.testinside-page-title h1:before {
+     width: 10%;
+}
+ .body-content-center.testinside-page-title h1::after {
+     width: 10%;
+}
+ .single-test-inside-social-link a {
+     color: #040404;
+     font-size: 24px;
+     font-family: 'Whitney-Medium';
+     line-height: 47px;
+}
+ .single-test-inside-social-link {
+     position: relative;
+     padding-left: 75px;
+}
+ .icon-test-inside-sc {
+     position: absolute;
+     left: 0;
+     top: 0;
+     width: 49px;
+     height: 47px;
+}
+ .test-inside-social-area h3 {
+     margin: 0 0 25px;
+     font-size: 22px;
+}
+ .route-to-kgd.body-content-center h1:before {
+     width: 15.5%;
+}
+ .route-to-kgd.body-content-center h1:after {
+     width: 15.5%;
+}
+ .route-to-kgd {
+     margin-top: 75px;
+}
+ .route-to-kgd h1 {
+     margin: 0 0 25px;
+}
+.route-to-kgd {
+	margin-top: 60px;
+	cursor: pointer;
+}
+.route-map-popup-win .modal-dialog {
+	width: 90%;
+}
+ .transport-map.body-content-center h1:before {
+     width: 26%;
+}
+ .transport-map.body-content-center h1:after {
+     width: 26%;
+}
+ .test-inside-page.page-development-notice {
+     margin-top: 170px;
+     margin-bottom: 70px;
+}
+
+ .test-accordion-content h3 {
+     font-size: 22px;
+     margin: 0 0 20px;
+}
+ .test-accordion-content {
+     line-height: 19px;
+}
+ .test-inside-accordion-area {
+     margin-bottom: 45px;
+}
+ .route-ss-img img {
+     margin-top: 15px;
+}
+.single-test-inside-block h1 {
+  color: #c2b690;
+}
+.single-test-inside-block {
+  margin-top: 55px;
+}
+.single-test-inside-block:first-child {
+  margin-top: 0;
+}
+.test-inside-body-content {
+  margin-bottom: 60px;
+}
+.feedback-button {
+	background-image: url(../img/die-frame-01.png);
+	background-size: cover;
+	background-position: center;
+	height: 223px;
+	margin-top: 23px;
+	margin-bottom: 14px;
+	display: block;
+    text-align: center;
+}
+.feedback-button h1 {
+  color: #fff;
+  padding: 40px 123px;
+  font-size: 42px;
+  line-height: 42px;
+}
+
+/* Prohibitade Page CSS */
+
+.Prohibitated-content-area ul {
+  padding: 0;
+  list-style: none;
+}
+.Prohibitated-content-area ul li {
+  position: relative;
+  padding-left: 15px;
+}
+.Prohibitated-content-area ul li:before {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  background: #0184CB;
+  content: "";
+  border-radius: 50%;
+}
+.Prohibitated-content-area h3 {
+	text-align: center;
+	margin-top: 30px;
+}
+.Prohibitated-content-area h4{
+	margin-top: 30px;
+}
+.prohibit-accordion .panel-title a {
+	font-size: 16px;
+	font-family: 'Whitney-book', sans-serif;
+	color: #0687CD;
+}
+ .prohibit-accordion .panel-default > .panel-heading {
+     color: transparent;
+     background-color: transparent;
+     border-color: transparent;
+}
+ .prohibit-accordion .panel-default {
+     border-color: transparent;
+}
+ .prohibit-accordion .panel-default > .panel-heading + .panel-collapse > .panel-body {
+     border-top-color: transparent;
+     border-top: 0px;
+}
+ .prohibit-accordion .panel {
+     background-color: transparent;
+     border: 0px solid transparent;
+     border-radius: 0px;
+     -webkit-box-shadow: 0 0px 0px rgba(0,0,0,.05);
+     box-shadow: 0 0px 0px rgba(0,0,0,.05);
+}
+ .prohibit-accordion .panel-title a {
+     display: block;
+     padding: 10px 0;
+     
+}
+ .prohibit-accordion .panel-title {
+     margin: 0;
+     padding: 0;
+}
+ .prohibit-accordion .panel-heading {
+     padding: 0;
+}
+.pro-table-bottom-left {
+	width: 50%;
+	float: left;
+}
+.pro-table-bottom-right {
+	width: 50%;
+	float: right;
+}
+
+/* New Home page CSS Jun 18*/
+.fans-area.new-home-page-fans {
+    padding-top: 0;
+    position: relative;
+    padding-bottom: 315px;
+    margin-bottom: -7px;
+}
+.new-fifa-home-banner {
+    margin-bottom: 35px;
+}
+
+/* New Fastival Page CSS */
+.single-fs-banner-btm-block{
+    background-image: url(../img/fastival-text-bg-frame.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.single-fs-banner-btm-block {
+  color: #00599d;
+  flex-basis: 330px;
+  height: 91px;
+  display: table;
+  width: 330px;
+}
+.single-fs-banner-btm-block h1 {
+  font-size: 40px;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  line-height: 35px;
+}
+.festival-banner-bottom-botton {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+.fst-cntnt-right {
+  text-align: justify;
+  font-family: 'Whitney-Medium';
+  line-height: 19.94px;
+}
+.fst-page-sticker-left{
+    background-image: url(../img/fastival-sticker-left.png);
+}
+.fst-page-sticker-right{
+    background-image: url(../img/fastival-sticker-right.png);
+}
+.fst-page-sticker-left, .fst-page-sticker-right{
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.fst-page-sticker-left {
+  font-size: 20px;
+  line-height: 19.94px;
+    font-family: 'Whitney-Medium';
+}
+.fst-page-sticker-right {
+  font-size: 25px;
+    font-family: 'Whitney-Semibold';
+}
+.fst-page-sticker-right span {
+  font-size: 30px;
+  font-weight: 700;
+  display: block;
+  margin-top: 15px;
+}
+.fastival-mr-btm-35px {
+  margin-bottom: 35px;
+}
+.fst-page-sticker-left.new-fast-page-st-left p {
+  padding: 0;
+  padding-top: 82px;
+}
+.fst-page-sticker-right p {
+  padding: 50px 34px;
+  margin-top: 64px;
+  padding-bottom: 75px;
+}
+.fst-sticker-bottom-content {
+    font-family: 'Whitney-Medium';
+    text-align: justify;
+    line-height: 19.94px;
+    padding-bottom: 30px;
+}
+.interactive-map-bottom-text {
+    font-family: 'Whitney-Medium';
+    padding: 30px 0;
+    text-align: justify;
+    line-height: 19.94px;
+}
+.fst-bottom-absolute-img img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+}
+.footer-top-area.fastival-footer-area {
+    padding-top: 0 !important;
+}
+
+
+
+.nw-hm-bn-btm-tt-abs {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 85%;
+    text-align: center;
+    right: 0;
+    margin: auto;
+}
+
+.nw-hm-bn-btm-tt-abs a {
+    text-decoration: underline;
+    color: #b5191e;
+}
+
+.nw-hm-bn-btm-tt-abs.nw-tt-blue-tt h1 {
+    color: #fff;
+    font-size: 57px;
+}
+
+.nw-home-banner-btm-title.nw-hm-blu-tt {margin-bottom: 60px;}
+
+.nw-hm-bn-btm-tt-abs.nw-tt-blue-tt {
+    top: 54px;
+}
